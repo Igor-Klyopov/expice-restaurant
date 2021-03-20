@@ -1,3 +1,20 @@
+.hero {
+  background-image: linear-gradient(
+    to right,
+    transparent 75%,
+    var(--primary-accent-color) 75%,
+    var(--primary-accent-color) 25%
+  );
+}
+
+.hero-label {
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1.5;
+  opacity: 0.05;
+}
+
 .hero-title {
   font-weight: var(--bold-font-weight);
   font-size: 36px;

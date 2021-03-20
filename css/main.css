@@ -205,6 +205,18 @@ summary {
   font-display: swap;
 }
 
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v15-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v15-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v15-latin-600.woff2") format("woff2"), url("../fonts/poppins-v15-latin-600.woff") format("woff"), url("../fonts/poppins-v15-latin-600.ttf") format("truetype"), url("../fonts/poppins-v15-latin-600.svg#Poppins") format("svg");
+  /* Legacy iOS */
+  font-display: swap;
+}
+
 /* poppins-700 - latin */
 @font-face {
   font-family: 'Poppins';
@@ -213,6 +225,18 @@ summary {
   src: url("../fonts/poppins-v15-latin-700.eot");
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/poppins-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v15-latin-700.woff2") format("woff2"), url("../fonts/poppins-v15-latin-700.woff") format("woff"), url("../fonts/poppins-v15-latin-700.ttf") format("truetype"), url("../fonts/poppins-v15-latin-700.svg#Poppins") format("svg");
+  /* Legacy iOS */
+  font-display: swap;
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v15-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v15-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"), url("../fonts/poppins-v15-latin-900.woff") format("woff"), url("../fonts/poppins-v15-latin-900.ttf") format("truetype"), url("../fonts/poppins-v15-latin-900.svg#Poppins") format("svg");
   /* Legacy iOS */
   font-display: swap;
 }
@@ -424,6 +448,52 @@ img {
   width: 20px;
   height: 14px;
   fill: currentColor;
+}
+
+.header {
+  padding-top: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(75%, transparent), color-stop(75%, var(--primary-accent-color)), color-stop(25%, var(--primary-accent-color)));
+  background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
+}
+
+.logo-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: var(--primary-accent-color);
+}
+
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+  fill: currentColor;
+}
+
+.logo-text {
+  width: 165px;
+  height: 55px;
+  fill: currentColor;
+}
+
+.main-menu {
+  display: none;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(75%, transparent), color-stop(75%, var(--primary-accent-color)), color-stop(25%, var(--primary-accent-color)));
+  background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
+}
+
+.hero-label {
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1.5;
+  opacity: 0.05;
 }
 
 .hero-title {
