@@ -1,0 +1,105 @@
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--primary-accent-color);
+}
+
+.basic-button {
+  border-radius: 50%;
+
+  &:focus,
+  &:hover {
+    background-color: var(--secondary-accent-color);
+  }
+}
+
+.hero-slider-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.hero-slider-button-icon-arrow {
+  width: 34px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.our-services-icon-arrow {
+  fill: currentColor;
+}
+
+.icon-geotag {
+  width: 25px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.go-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  color: var(--basic-light-text-color);
+}
+
+.hero-send-button {
+  width: 146px;
+  height: 72px;
+  padding: 20px 50px;
+  font-size: 30px;
+  line-height: 3;
+  border-radius: 60px 3px 3px 3px;
+
+  &:focus,
+  &:hover {
+    background-color: var(--secondary-accent-color);
+  }
+}
+
+.send-button-text {
+}
+.our-services-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--basic-light-text-color);
+}
+
+.our-services-icon-arrow {
+  width: 8px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.booking-search-button {
+  width: 80px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 3.75;
+  border-radius: 3px 3px 3px 3px;
+
+  &:focus,
+  &:hover {
+    background-color: var(--secondary-accent-color);
+  }
+}
+
+.send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--basic-light-text-color);
+}
+
+.send-button-icon-arrow {
+  width: 20px;
+  height: 14px;
+  fill: currentColor;
+}

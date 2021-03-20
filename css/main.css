@@ -148,6 +148,7 @@ summary {
 :root {
   --primary-text-color: #707070;
   --secondary-text-color: #2e266f;
+  --basic-light-text-color: #ffffff;
   --primary-accent-color: #35cd8c;
   --secondary-accent-color: #fe043c;
   --basic-dark-text-color: #000000;
@@ -306,9 +307,134 @@ img {
   background-position: center;
 }
 
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--primary-accent-color);
+}
+
+.basic-button {
+  border-radius: 50%;
+}
+
+.basic-button:focus, .basic-button:hover {
+  background-color: var(--secondary-accent-color);
+}
+
+.hero-slider-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.hero-slider-button-icon-arrow {
+  width: 34px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.our-services-icon-arrow {
+  fill: currentColor;
+}
+
+.icon-geotag {
+  width: 25px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.go-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  color: var(--basic-light-text-color);
+}
+
+.hero-send-button {
+  width: 146px;
+  height: 72px;
+  padding: 20px 50px;
+  font-size: 30px;
+  line-height: 3;
+  border-radius: 60px 3px 3px 3px;
+}
+
+.hero-send-button:focus, .hero-send-button:hover {
+  background-color: var(--secondary-accent-color);
+}
+
+.our-services-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--basic-light-text-color);
+}
+
+.our-services-icon-arrow {
+  width: 8px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.booking-search-button {
+  width: 80px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 3.75;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.booking-search-button:focus, .booking-search-button:hover {
+  background-color: var(--secondary-accent-color);
+}
+
+.send-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--basic-light-text-color);
+}
+
+.send-button-icon-arrow {
+  width: 20px;
+  height: 14px;
+  fill: currentColor;
+}
+
 .hero-title {
   font-weight: var(--bold-font-weight);
   font-size: 36px;
+}
+
+.hero-location-link {
+  display: block;
+  color: var(--basic-light-text-color);
+  background-color: var(--primary-accent-color);
 }
 
 .booking {
