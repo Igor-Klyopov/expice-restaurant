@@ -1,7 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: var(--regular-font-weight);
   font-size: 14px;
   line-height: 1.714;
   color: var(--primary-text-color);
@@ -22,11 +21,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title {
-  margin-top: 0;
-  color: var(--title-color);
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -44,45 +38,16 @@ img {
 }
 
 .title {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
-  /* or 133% */
-
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-
-  color: #2e266f;
-}
-
-.title-2 {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 48px;
-  /* or 133% */
-
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-
-  color: #2e266f;
-}
-.title-3 {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
+  margin-top: 0;
   font-size: 24px;
-  line-height: 32px;
-  /* or 133% */
-
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-
+  line-height: 1.333;
   color: #2e266f;
+}
+
+.section-title {
+  font-weight: var(--medium-font-weight);
+  font-size: 36px;
+}
+.description-title {
+  font-weight: var(--medium-font-weight);
 }
