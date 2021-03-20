@@ -1,10 +1,19 @@
+//
+@mixin card-set-container($card-set-card-margin) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: -1 * $card-set-card-margin;
+}
+
 //Adds the required number of cards per line;
 //works inside 'card-set-container'
-@mixin card-number-in-line($card-number) {
+@mixin card-number-in-line($card-number, $card-set-card-margin) {
   flex-basis: calc(
-    (100% - 2 * #{$card-number} * var(--card-set-card-margin)) / #{$card-number}
+    (100% - 2 * #{$card-number} * $card-set-card-margin) / #{$card-number}
   );
-  margin: var(--card-set-card-margin);
+  margin: $card-set-card-margin;
 }
 
 //Adds media rules for responsive layout

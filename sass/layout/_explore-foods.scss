@@ -1,0 +1,12 @@
+.food-list {
+  margin: 0 auto;
+  @include card-set-container(10px);
+}
+
+.food-item {
+  @include card-number-in-line(1, 10px);
+
+  // @include adaptive-for-tablet {
+  //   @include card-number-in-line(2, 10px);
+  // }
+}
