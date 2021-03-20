@@ -1,0 +1,23 @@
+.our-services {
+}
+
+.our-services-list {
+}
+
+.our-services-item {
+  &:last-child {
+    background-color: var(--secondary-bg-color);
+  }
+}
+
+.our-services-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 271px;
+  height: 275px;
+  background-color: var(--secondary-bg-color);
+}
+
+.our-services-icon {
+}

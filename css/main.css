@@ -222,6 +222,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
 .list {
@@ -264,7 +265,7 @@ img {
   margin-top: 0;
   font-size: 24px;
   line-height: 1.333;
-  color: #2e266f;
+  color: var(--secondary-text-color);
 }
 
 .section-title {
@@ -308,5 +309,32 @@ img {
 .hero-title {
   font-weight: var(--bold-font-weight);
   font-size: 36px;
+}
+
+.booking {
+  background-color: var(--secondary-bg-color);
+}
+
+.our-services-item:last-child {
+  background-color: var(--secondary-bg-color);
+}
+
+.our-services-icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 271px;
+  height: 275px;
+  background-color: var(--secondary-bg-color);
+}
+
+.download-apps {
+  background-color: var(--secondary-bg-color);
 }
 /*# sourceMappingURL=main.css.map */
