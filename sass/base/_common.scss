@@ -42,3 +42,47 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #2e266f;
+}
+
+.title-2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #2e266f;
+}
+.title-3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #2e266f;
+}
