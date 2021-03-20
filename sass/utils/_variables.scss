@@ -1,0 +1,20 @@
+:root {
+  //colors
+  --primary-text-color: #707070;
+  --secondary-text-color: #2e266f;
+  --primary-accent-color: #35cd8c;
+  --secondary-accent-color: #fe043c;
+  --basic-dark-text-color: #000000;
+  --primary-bg-color: #fff5ec;
+  --secondary-bg-color: #ffedde;
+  //animation
+  --basic-transform-animation: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  //card stack gap for 'card-set-container'
+  --card-set-card-margin: 15px;
+}
+
+//breakpoints for adaptability
+$phone: 554px;
+$tablet: 1090px;
+$desktop: 1650px;

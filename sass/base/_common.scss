@@ -1,0 +1,44 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--primary-text-color);
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  transition-property: color, fill, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title {
+  margin-top: 0;
+  color: var(--title-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+}
