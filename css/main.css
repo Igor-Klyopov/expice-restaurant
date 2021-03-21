@@ -294,10 +294,15 @@ p {
   margin-bottom: 0;
 }
 
+section {
+  outline: 2px solid #be24d3;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  outline: 3px solid #df2e0f;
 }
 
 @media (min-width: 1090px) {
@@ -480,6 +485,10 @@ p {
   background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
 }
 
+.hero .container {
+  padding-bottom: 45px;
+}
+
 .hero-label {
   margin-bottom: 0;
   font-weight: 900;
@@ -499,8 +508,22 @@ p {
   background-color: var(--primary-accent-color);
 }
 
+.restaurants .container {
+  padding-top: 78px;
+  padding-bottom: 33px;
+}
+
 .booking {
   background-color: var(--secondary-bg-color);
+}
+
+.booking .container {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.our-services .container {
+  padding-top: 60px;
 }
 
 .our-services-item:last-child {
@@ -520,6 +543,11 @@ p {
   width: 271px;
   height: 275px;
   background-color: var(--secondary-bg-color);
+}
+
+.explore-foods .container {
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .food-list {
@@ -616,5 +644,14 @@ p {
 
 .download-apps {
   background-color: var(--secondary-bg-color);
+}
+
+.download-apps .container {
+  padding-top: 54px;
+}
+
+.footer .container {
+  padding-top: 45px;
+  padding-bottom: 36px;
 }
 /*# sourceMappingURL=main.css.map */
