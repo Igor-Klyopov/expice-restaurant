@@ -17,6 +17,7 @@ body {
 .link {
   text-decoration: none;
   font-style: normal;
+  color: inherit;
   transition-property: color, fill, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,6 +43,7 @@ p {
   margin-top: 0;
   font-size: 24px;
   line-height: 1.333;
+  text-transform: capitalize;
   color: var(--secondary-text-color);
 }
 
