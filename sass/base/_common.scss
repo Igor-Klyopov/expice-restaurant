@@ -24,7 +24,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -33,7 +33,7 @@ img {
   overflow: hidden;
 }
 
-.paragraph {
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -51,4 +51,5 @@ img {
 }
 .description-title {
   font-weight: var(--medium-font-weight);
+  margin-bottom: 0;
 }
