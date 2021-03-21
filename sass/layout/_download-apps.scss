@@ -1,8 +1,56 @@
 .download-apps {
   background-color: var(--secondary-bg-color);
+  background-image: radial-gradient(
+    var(--bg-gradient-pattern-color) 4px,
+    transparent 4px
+  );
+  background-size: 45px 43px;
 }
 
 .download-apps .container {
   padding-top: 54px;
-  // padding-bottom: 70px;
+}
+
+.download-apps-description {
+  margin-bottom: 28px;
+}
+
+.download-apps-title {
+  border-left: 12px solid var(--primary-accent-color);
+  padding: 0 20px;
+}
+
+.download-apps-description-text {
+  margin-bottom: 30px;
+}
+
+.download-apps-description-wrap {
+  padding: 0 20px;
+}
+
+.app-stors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-stors-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.app-stors-link {
+  width: 100%;
+}
+.app-stors-icon {
+  width: 178px;
+  height: 49px;
+}
+
+.download-apps-image-wrap {
+  width: 100%;
+  height: 525px;
+  background-image: url(../../images/download-apps/app-mobile.png),
+    url(../../images/download-apps/lettuce-3-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%, -12% 50%;
 }
