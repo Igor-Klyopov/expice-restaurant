@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  // position: relative;
   background-image: url(../../images/footer/greens-mobile.png);
   background-repeat: no-repeat;
   background-position: 0 -40%;
@@ -10,20 +10,43 @@
   padding-bottom: 36px;
 }
 
+.footer-wrap {
+  // background-image: linear-gradient(
+  //     to right,
+  //     var(--primary-bg-color) 10%,
+  //     transparent 10%,
+  //     transparent 90%,
+  //     var(--primary-bg-color) 90%,
+  //     var(--primary-bg-color) 100%
+  //   ),
+  //   radial-gradient(var(--bg-gradient-pattern-color) 3px, transparent 3px);
+  // background-size: 100% 100%, 45px 43px;
+
+  background-image: radial-gradient(
+    var(--bg-gradient-pattern-color) 3px,
+    transparent 3px
+  );
+  background-size: 45px 43px;
+  position: relative;
+  z-index: -1;
+}
+
 .footer-appeal {
   padding: 0 50px;
   text-align: center;
 }
 
 .footer-form {
+  position: relative;
+  max-width: 380px;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
 }
 
 .footer-form-field {
-  position: relative;
   display: block;
-  width: 380px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .footer-input-mail {
@@ -114,17 +137,18 @@
   color: var(--basic-dark-text-color);
 }
 
-.gradient-polka-dot-pattern {
-  position: absolute;
-  top: -30%;
-  left: -32%;
-  transform: translate(50%, 50%);
-  z-index: -1;
-  width: 460px;
-  height: 325px;
-  background-image: radial-gradient(
-    var(--bg-gradient-pattern-color) 3px,
-    transparent 3px
-  );
-  background-size: 45px 43px;
-}
+// .gradient-polka-dot-pattern {
+//   position: absolute;
+//   top: -30%;
+//   left: -32%;
+//   transform: translate(50%, 50%);
+//   z-index: -1;
+//   max-width: 100%;
+//   width: 460px;
+//   height: 325px;
+//   background-image: radial-gradient(
+//     var(--bg-gradient-pattern-color) 3px,
+//     transparent 3px
+//   );
+//   background-size: 45px 43px;
+// }
