@@ -4,13 +4,113 @@
 .our-services .container {
   padding-top: 60px;
 }
+
+.our-services-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0 20px;
+  height: 100px;
+  border-left: 12px solid var(--primary-accent-color);
+}
+
+.our-services-description {
+  padding: 0 32px;
+  margin-bottom: 30px;
+}
+
 .our-services-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .our-services-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &:last-child {
     background-color: var(--secondary-bg-color);
   }
+}
+
+.our-services-item-wrap {
+  width: 210px;
+}
+
+.our-services-item-title {
+  margin-bottom: 20px;
+  // &::after {
+  //   content: '';
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   width: 84px;
+  //   height: 3px;
+  //   background-color: var(--primary-accent-color);
+  // }
+}
+
+.our-services-booking {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: -280px;
+    // bottom: 15px;
+    // left: -320px;
+    // transform: translate(50%, 50%);
+    display: inline-block;
+    width: 82px;
+    height: 16px;
+    background-image: url(../../images/our-services/arrow-left-long.svg);
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 84px;
+    height: 3px;
+    margin-left: 20px;
+    background-color: var(--primary-accent-color);
+  }
+}
+
+.our-services-opening-hours {
+  position: relative;
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 84px;
+    height: 3px;
+    margin-right: 20px;
+    background-color: var(--primary-accent-color);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: -110px;
+    // top: 0;
+    // right: -75px;
+    // transform: translate(50%, 50%);
+    display: inline-block;
+    width: 82px;
+    height: 16px;
+    background-image: url(../../images/our-services/arrow-right-long.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.opening-hours {
+  // display: inline-block;
 }
 
 .our-services-icon-wrap {
@@ -22,5 +122,45 @@
   background-color: var(--secondary-bg-color);
 }
 
+.our-services-delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 462px;
+  min-height: 550px;
+  margin: 0 auto;
+}
+
 .our-services-icon {
+  fill: var(--primary-accent-color);
+}
+
+.people-at-the-table-icon {
+  width: 112px;
+  height: 112px;
+}
+
+.plate-cutlery-icon {
+  width: 147px;
+  height: 112px;
+}
+
+.moto-bike-icon {
+  width: 212px;
+  height: 160px;
+  margin-bottom: 40px;
+}
+
+.our-services-delivery-title {
+  max-width: 245px;
+  margin-bottom: 20px;
+}
+
+.our-services-delivery-text {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: var(--primary-accent-color) solid 3px;
 }
