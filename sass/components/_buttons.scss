@@ -2,11 +2,13 @@
   cursor: pointer;
   outline: none;
   border: none;
-  background-color: var(--primary-accent-color);
 }
 
 .basic-button {
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-accent-color);
 
   &:focus,
   &:hover {
@@ -26,6 +28,13 @@
   fill: currentColor;
 }
 
+.booking-search-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  // transform: translate(50%, 50%);
+}
+
 .our-services-icon-arrow {
   fill: currentColor;
 }
@@ -37,9 +46,9 @@
 }
 
 .go-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   font-weight: var(--bold-font-weight);
   text-transform: uppercase;
   color: var(--basic-light-text-color);
@@ -89,7 +98,7 @@
   }
 }
 
-.send-button {
+.mail-send-button {
   position: absolute;
   top: -10px;
   right: 30px;
@@ -99,10 +108,11 @@
   align-items: center;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   color: var(--basic-light-text-color);
 }
 
-.send-button-icon-arrow {
+.mail-send-button-icon {
   width: 20px;
   height: 14px;
   fill: currentColor;

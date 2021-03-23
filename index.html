@@ -49,7 +49,7 @@
           <form>
             <input type="text" />
             <button
-              class="button go-button hero-send-button"
+              class="button basic-button hero-send-button"
               type="button"
               aria-label=""
             >
@@ -62,12 +62,20 @@
             </svg>
             Rajshahi
           </a>
-          <button class="button hero-slider-button" type="button" aria-label="">
+          <button
+            class="button hero-slider-button"
+            type="button"
+            aria-label="scroll left"
+          >
             <svg class="hero-slider-button-icon-arrow">
               <use href="./images/icon-sprite.svg#icon-arrow-left"></use>
             </svg>
           </button>
-          <button class="button hero-slider-button" type="button" aria-label="">
+          <button
+            class="button hero-slider-button"
+            type="button"
+            aria-label="scroll right"
+          >
             <svg class="hero-slider-button-icon-arrow">
               <use href="./images/icon-sprite.svg#icon-arrow-right"></use>
             </svg>
@@ -114,16 +122,21 @@
       </section>
       <section class="booking">
         <div class="container">
-          <h2 class="title section-title">Advance booking</h2>
-          <form>
-            <input type="text" />
-            <button
-              class="button go-button booking-search-button"
-              type="button"
-              aria-label=""
-            >
-              <span class="send-button-text">Go</span>
-            </button>
+          <h2 class="title section-title booking-title">Advance booking</h2>
+          <form class="booking-search-form">
+            <div class="booking-search-wrap">
+              <label>
+                <span class="visually-hidden">Restaurant search</span>
+                <input class="booking-search-input" type="text" />
+              </label>
+              <button
+                class="button basic-button booking-search-button"
+                type="submit"
+                aria-label="send"
+              >
+                <span class="send-button-text">Go</span>
+              </button>
+            </div>
           </form>
         </div>
       </section>
@@ -355,22 +368,21 @@
             </p>
           </div>
           <form class="footer-form">
-            <label class="footer-form-field">
-              <input
-                class="footer-input-mail"
-                type="text"
-                placeholder="E-mail"
-              />
-            </label>
-            <button
-              class="button basic-button send-button"
-              type="submit"
-              aria-label="send e-mail"
-            >
-              <svg class="send-button-icon-arrow">
-                <use href="./images/icon-sprite.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
+            <div class="footer-form-mail-wrap">
+              <label>
+                <span class="visually-hidden">Enter your email</span>
+                <input class="footer-input-mail" type="text" />
+              </label>
+              <button
+                class="button basic-button mail-send-button"
+                type="submit"
+                aria-label="send e-mail"
+              >
+                <svg class="mail-send-button-icon">
+                  <use href="./images/icon-sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
           </form>
           <ul class="list about-list">
             <li class="about-item">

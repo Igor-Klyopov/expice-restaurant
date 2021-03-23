@@ -1,7 +1,32 @@
 .booking {
   background-color: var(--secondary-bg-color);
+  background-image: url(../../images/booking/lettuce-1-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
 }
+
 .booking .container {
   padding-top: 85px;
   padding-bottom: 85px;
+}
+
+.booking-title {
+  margin-bottom: 40px;
+  text-transform: lowercase;
+}
+
+.booking-search-wrap {
+  position: relative;
+  width: 273px;
+  height: 51px;
+}
+
+.booking-search-input {
+  width: 100%;
+  padding: 18px 120px 18px 10px;
+  background-color: var(--basic-light-bg-color);
+  box-shadow: 2px 2px 30px 2px var(--primary-bg-color);
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }

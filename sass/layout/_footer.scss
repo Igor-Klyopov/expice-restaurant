@@ -27,8 +27,6 @@
     transparent 3px
   );
   background-size: 45px 43px;
-  position: relative;
-  z-index: -1;
 }
 
 .footer-appeal {
@@ -36,7 +34,7 @@
   text-align: center;
 }
 
-.footer-form {
+.footer-form-mail-wrap {
   position: relative;
   max-width: 380px;
   margin-right: auto;
@@ -44,16 +42,17 @@
   margin-left: auto;
 }
 
-.footer-form-field {
-  display: block;
-  // margin: 0 auto;
-}
+// .footer-form-field {
+//   display: block;
+//   // margin: 0 auto;
+// }
 
 .footer-input-mail {
   padding: 22px 50px 22px 33px;
   width: 100%;
   background: var(--basic-light-bg-color);
   box-shadow: 2px 2px 30px 2px var(--primary-bg-color);
+  outline: none;
   border: none;
   border-radius: 100px;
 

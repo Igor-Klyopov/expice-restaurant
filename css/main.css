@@ -328,11 +328,13 @@ section {
   cursor: pointer;
   outline: none;
   border: none;
-  background-color: var(--primary-accent-color);
 }
 
 .basic-button {
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-accent-color);
 }
 
 .basic-button:focus, .basic-button:hover {
@@ -351,6 +353,12 @@ section {
   fill: currentColor;
 }
 
+.booking-search-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
 .our-services-icon-arrow {
   fill: currentColor;
 }
@@ -362,9 +370,6 @@ section {
 }
 
 .go-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: var(--bold-font-weight);
   text-transform: uppercase;
   color: var(--basic-light-text-color);
@@ -410,7 +415,7 @@ section {
   background-color: var(--secondary-accent-color);
 }
 
-.send-button {
+.mail-send-button {
   position: absolute;
   top: -10px;
   right: 30px;
@@ -420,10 +425,11 @@ section {
   align-items: center;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   color: var(--basic-light-text-color);
 }
 
-.send-button-icon-arrow {
+.mail-send-button-icon {
   width: 20px;
   height: 14px;
   fill: currentColor;
@@ -491,11 +497,35 @@ section {
 
 .booking {
   background-color: var(--secondary-bg-color);
+  background-image: url(../../images/booking/lettuce-1-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
 }
 
 .booking .container {
   padding-top: 85px;
   padding-bottom: 85px;
+}
+
+.booking-title {
+  margin-bottom: 40px;
+  text-transform: lowercase;
+}
+
+.booking-search-wrap {
+  position: relative;
+  width: 273px;
+  height: 51px;
+}
+
+.booking-search-input {
+  width: 100%;
+  padding: 18px 120px 18px 10px;
+  background-color: var(--basic-light-bg-color);
+  box-shadow: 2px 2px 30px 2px var(--primary-bg-color);
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
 
 .our-services .container {
@@ -794,8 +824,6 @@ section {
 .footer-wrap {
   background-image: radial-gradient(var(--bg-gradient-pattern-color) 3px, transparent 3px);
   background-size: 45px 43px;
-  position: relative;
-  z-index: -1;
 }
 
 .footer-appeal {
@@ -803,7 +831,7 @@ section {
   text-align: center;
 }
 
-.footer-form {
+.footer-form-mail-wrap {
   position: relative;
   max-width: 380px;
   margin-right: auto;
@@ -811,15 +839,12 @@ section {
   margin-left: auto;
 }
 
-.footer-form-field {
-  display: block;
-}
-
 .footer-input-mail {
   padding: 22px 50px 22px 33px;
   width: 100%;
   background: var(--basic-light-bg-color);
   box-shadow: 2px 2px 30px 2px var(--primary-bg-color);
+  outline: none;
   border: none;
   border-radius: 100px;
 }
