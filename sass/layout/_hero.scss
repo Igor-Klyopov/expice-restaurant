@@ -19,8 +19,27 @@
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: var(--bold-font-weight);
   font-size: 36px;
+}
+
+.hero-search {
+  margin-bottom: 50px;
+}
+
+.hero-search-wrap {
+  position: relative;
+  width: 462px;
+  height: 90px;
+}
+
+.hero-search-input {
+  width: 100%;
+  padding: 36px 210px 36px 30px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
 
 .hero-location-link {

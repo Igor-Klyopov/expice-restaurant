@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
 
   &:focus,
@@ -45,21 +46,17 @@
   fill: currentColor;
 }
 
-.go-button {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  font-weight: var(--bold-font-weight);
-  text-transform: uppercase;
-  color: var(--basic-light-text-color);
-}
-
-.hero-send-button {
+.hero-search-button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
   width: 146px;
   height: 72px;
   padding: 20px 50px;
   font-size: 30px;
   line-height: 3;
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
   border-radius: 60px 3px 3px 3px;
 
   &:focus,
@@ -71,12 +68,11 @@
 .send-button-text {
 }
 .our-services-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  color: var(--basic-light-text-color);
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  border-radius: 50%;
 }
 
 .our-services-icon-arrow {
@@ -90,12 +86,9 @@
   height: 40px;
   font-size: 24px;
   line-height: 3.75;
-  border-radius: 3px 3px 3px 3px;
-
-  &:focus,
-  &:hover {
-    background-color: var(--secondary-accent-color);
-  }
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .mail-send-button {
@@ -109,7 +102,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: var(--basic-light-text-color);
 }
 
 .mail-send-button-icon {

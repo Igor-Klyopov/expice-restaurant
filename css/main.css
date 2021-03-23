@@ -334,6 +334,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
 }
 
@@ -369,32 +370,30 @@ section {
   fill: currentColor;
 }
 
-.go-button {
-  font-weight: var(--bold-font-weight);
-  text-transform: uppercase;
-  color: var(--basic-light-text-color);
-}
-
-.hero-send-button {
+.hero-search-button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
   width: 146px;
   height: 72px;
   padding: 20px 50px;
   font-size: 30px;
   line-height: 3;
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
   border-radius: 60px 3px 3px 3px;
 }
 
-.hero-send-button:focus, .hero-send-button:hover {
+.hero-search-button:focus, .hero-search-button:hover {
   background-color: var(--secondary-accent-color);
 }
 
 .our-services-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  color: var(--basic-light-text-color);
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  border-radius: 50%;
 }
 
 .our-services-icon-arrow {
@@ -408,11 +407,9 @@ section {
   height: 40px;
   font-size: 24px;
   line-height: 3.75;
-  border-radius: 3px 3px 3px 3px;
-}
-
-.booking-search-button:focus, .booking-search-button:hover {
-  background-color: var(--secondary-accent-color);
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .mail-send-button {
@@ -426,7 +423,6 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: var(--basic-light-text-color);
 }
 
 .mail-send-button-icon {
@@ -480,8 +476,27 @@ section {
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: var(--bold-font-weight);
   font-size: 36px;
+}
+
+.hero-search {
+  margin-bottom: 50px;
+}
+
+.hero-search-wrap {
+  position: relative;
+  width: 462px;
+  height: 90px;
+}
+
+.hero-search-input {
+  width: 100%;
+  padding: 36px 210px 36px 30px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
 
 .hero-location-link {

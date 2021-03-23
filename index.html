@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,15 +46,20 @@
         <div class="container">
           <p class="title hero-label">Food</p>
           <h1 class="title hero-title">Discover restaurant & delicious food</h1>
-          <form>
-            <input type="text" />
-            <button
-              class="button basic-button hero-send-button"
-              type="button"
-              aria-label=""
-            >
-              <span class="send-button-text">Go</span>
-            </button>
+          <form class="hero-search">
+            <div class="hero-search-wrap">
+              <label>
+                <span class="visually-hidden">Search restaurant, food</span>
+                <input class="hero-search-input" type="text" />
+              </label>
+              <button
+                class="button basic-button hero-search-button"
+                type="button"
+                aria-label="To start searching"
+              >
+                <span class="send-button-text">Go</span>
+              </button>
+            </div>
           </form>
           <a class="link hero-location-link" aria-label="">
             <svg class="icon-geotag">
