@@ -40,6 +40,14 @@
   outline: none;
   border: none;
   border-radius: 3px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 5;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+    opacity: 0.6;
+  }
 }
 
 .hero-location-link {

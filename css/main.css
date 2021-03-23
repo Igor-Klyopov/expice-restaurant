@@ -499,6 +499,14 @@ section {
   border-radius: 3px;
 }
 
+.hero-search-input::placeholder {
+  font-size: 18px;
+  line-height: 5;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+  opacity: 0.6;
+}
+
 .hero-location-link {
   display: block;
   color: var(--basic-light-text-color);
@@ -541,6 +549,14 @@ section {
   outline: none;
   border: none;
   border-radius: 3px;
+}
+
+.booking-search-input::placeholder {
+  font-size: 14px;
+  line-height: 1.714;
+  text-transform: lowercase;
+  color: var(--secondary-text-color);
+  opacity: 0.6;
 }
 
 .our-services .container {

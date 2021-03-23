@@ -29,4 +29,12 @@
   outline: none;
   border: none;
   border-radius: 3px;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.714;
+    text-transform: lowercase;
+    color: var(--secondary-text-color);
+    opacity: 0.6;
+  }
 }
