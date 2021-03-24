@@ -45,14 +45,6 @@
 
 .our-services-item-title {
   margin-bottom: 20px;
-  // &::after {
-  //   content: '';
-  //   display: inline-block;
-  //   vertical-align: middle;
-  //   width: 84px;
-  //   height: 3px;
-  //   background-color: var(--primary-accent-color);
-  // }
 }
 
 .our-services-booking {
@@ -62,9 +54,6 @@
     position: absolute;
     bottom: 8px;
     left: -280px;
-    // bottom: 15px;
-    // left: -320px;
-    // transform: translate(50%, 50%);
     display: inline-block;
     width: 82px;
     height: 16px;
@@ -98,9 +87,6 @@
     position: absolute;
     top: 8px;
     right: -110px;
-    // top: 0;
-    // right: -75px;
-    // transform: translate(50%, 50%);
     display: inline-block;
     width: 82px;
     height: 16px;

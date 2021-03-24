@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 15px;
   background-image: linear-gradient(
     to right,
@@ -6,6 +7,11 @@
     var(--primary-accent-color) 75%,
     var(--primary-accent-color) 25%
   );
+}
+
+.header .container {
+  // position: relative;
+  // display: flex;
 }
 
 .logo-wrap {
@@ -27,6 +33,24 @@
   fill: currentColor;
 }
 
-.main-menu {
+.main-manu-container {
   display: none;
+  &.is-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // top: -100%;
+    // left: 0px;
+    // z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    overflow-y: scroll;
+    display: block;
+  }
+}
+
+.main-menu {
+  // display: none;
 }
