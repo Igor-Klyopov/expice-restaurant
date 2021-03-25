@@ -1,7 +1,7 @@
 .menu-burger-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: fixed;
+  top: 10px;
+  right: 10px;
   z-index: 10;
   padding: 15px;
   display: inline-block;
@@ -63,6 +63,10 @@
           transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
     }
+  }
+
+  @include adaptive-for-desktop {
+    display: none;
   }
 }
 
