@@ -42,17 +42,26 @@
 .main-manu-container {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   display: none;
   width: 100%;
   height: 100%;
   padding: 40px 10px;
+
+  // animation-name: bounceInRight;
+  //   transition-property: <свойство>
+  // transition-duration: <время>
+  // transition-timing-function: <функция распределения времени>
+  // transition-delay: <задержка>
   &.is-open {
+    top: 0;
+    right: 0;
     z-index: 1;
     display: block;
     overflow-y: scroll;
     // background-color: var(--secondary-bg-color);
     background-color: var(--primary-accent-color);
+    // transition: right 250ms ease-in-out;
   }
 
   @include adaptive-for-tablet {

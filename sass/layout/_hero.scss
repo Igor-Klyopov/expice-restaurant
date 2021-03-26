@@ -55,3 +55,16 @@
   color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
 }
+
+.hero-slider-show-container {
+  outline: 2px solid #000;
+  width: 54.2121%; //878px
+  overflow: hidden;
+}
+
+.hero-slider-show-track {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}

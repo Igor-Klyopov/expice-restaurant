@@ -172,6 +172,39 @@ summary {
   clip: rect(0 0 0 0);
 }
 
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 /* poppins-regular - latin */
 @font-face {
   font-family: 'Poppins';
@@ -570,7 +603,7 @@ section {
 .main-manu-container {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   display: none;
   width: 100%;
   height: 100%;
@@ -578,6 +611,8 @@ section {
 }
 
 .main-manu-container.is-open {
+  top: 0;
+  right: 0;
   z-index: 1;
   display: block;
   overflow-y: scroll;
@@ -709,6 +744,19 @@ section {
   display: block;
   color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
+}
+
+.hero-slider-show-container {
+  outline: 2px solid #000;
+  width: 54.2121%;
+  overflow: hidden;
+}
+
+.hero-slider-show-track {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 
 .restaurants .container {
