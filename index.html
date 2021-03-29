@@ -14,6 +14,11 @@
       content="Expice, Discover Restaurant, Delicious Food"
     />
     <title>Expice</title>
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -56,7 +61,7 @@
           </nav>
         </div>
         <button
-          class="button menu-burger-button is-open"
+          class="button menu-burger-button"
           type="button"
           aria-label="menu open/close button"
           data-menu-burger-button
@@ -101,22 +106,22 @@
             <div class="hero-slider-show-track">
               <img
                 class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-1-desktop.png"
+                src="./images/hero/hero-delicious-food-1-mobile.png"
                 alt="a plate with appetizing meat, vegetables and herbs"
               />
               <img
                 class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-2-.png"
+                src="./images/hero/hero-delicious-food-2-mobile.png"
                 alt="plate with delicious fish, vegetables and herbs"
               />
               <img
                 class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-3-.png"
+                src="./images/hero/hero-delicious-food-3-mobile.png"
                 alt="plate with mouth-watering meatloaf, vegetable puree and sauce"
               />
               <img
                 class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-4-.png"
+                src="./images/hero/hero-delicious-food-4-mobile.png"
                 alt="poached egg, black bread, tomatoes and herbs"
               />
             </div>
@@ -154,30 +159,137 @@
             ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Est, adipiscing cursus auctor eget sed.
           </p>
-          <ul class="list">
-            <li>
-              <img
-                src="./images/restaurants/restaurants-food-1-mobile.jpg"
-                alt="hamburger with fries"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/restaurants/restaurants-food-2-mobile.jpg"
-                alt="pizza"
-              />
-            </li>
-          </ul>
+          <div class="swiper-container">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide" data-hash="slide-1">
+                <div class="restaurants-image-wrap">
+                  <img
+                    class="restaurants-image"
+                    src="./images/restaurants/restaurants-food-3-mobile.jpg"
+                    alt="kebab with vegetables"
+                  />
+                  <div class="restaurants-image-overlay">
+                    <h3 class="restaurants-image-overlay-title">The wonton</h3>
+                    <p class="restaurants-image-overlay-text">
+                      we are all about we are all about to the fullest and all
+                      content dining out or in!dining out or in!
+                    </p>
+                    <a class="link" href="">
+                      <svg>
+                        <use href="./images/icon-sprite.svg#icon-geotag"></use>
+                      </svg>
+                      <span>Saheb bazar</span></a
+                    >
+                    <button class="button" type="button">Book now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" data-hash="slide-2">
+                <div class="restaurants-image-wrap">
+                  <img
+                    class="restaurants-image"
+                    src="./images/restaurants/restaurants-food-4-mobile.jpg"
+                    alt="salad with slices of meat and herbs"
+                  />
+                  <div class="restaurants-image-overlay">
+                    <h3 class="restaurants-image-overlay-title">The wonton</h3>
+                    <p class="restaurants-image-overlay-text">
+                      we are all about we are all about to the fullest and all
+                      content dining out or in!dining out or in!
+                    </p>
+                    <a class="link" href="">
+                      <svg>
+                        <use href="./images/icon-sprite.svg#icon-geotag"></use>
+                      </svg>
+                      <span>Saheb bazar</span></a
+                    >
+                    <button class="button" type="button">Book now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" data-hash="slide-3">
+                <div class="restaurants-image-wrap">
+                  <img
+                    class="restaurants-image"
+                    src="./images/restaurants/restaurants-food-5-mobile.jpg"
+                    alt="fried chicken legs with vegetables"
+                  />
+                  <div class="restaurants-image-overlay">
+                    <h3 class="restaurants-image-overlay-title">The wonton</h3>
+                    <p class="restaurants-image-overlay-text">
+                      we are all about we are all about to the fullest and all
+                      content dining out or in!dining out or in!
+                    </p>
+                    <a class="link" href="">
+                      <svg>
+                        <use href="./images/icon-sprite.svg#icon-geotag"></use>
+                      </svg>
+                      <span>Saheb bazar</span></a
+                    >
+                    <button class="button" type="button">Book now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" data-hash="slide-4">
+                <div class="restaurants-image-wrap">
+                  <img
+                    class="restaurants-image"
+                    src="./images/restaurants/restaurants-food-1-mobile.jpg"
+                    alt="hamburger with fries"
+                  />
+                  <div class="restaurants-image-overlay">
+                    <h3 class="restaurants-image-overlay-title">Fire water</h3>
+                    <p class="restaurants-image-overlay-text">
+                      we are all about we are all about to the fullest and all
+                      content dining out or in!dining out or in!
+                    </p>
+                    <a class="link" href="">
+                      <svg>
+                        <use href="./images/icon-sprite.svg#icon-geotag"></use>
+                      </svg>
+                      <span>New market</span>
+                    </a>
+                    <button class="button" type="button">Book now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide" data-hash="slide-5">
+                <div class="restaurants-image-wrap">
+                  <img
+                    class="restaurants-image"
+                    src="./images/restaurants/restaurants-food-2-mobile.jpg"
+                    alt="pizza"
+                  />
+                  <div class="restaurants-image-overlay">
+                    <h3 class="restaurants-image-overlay-title">The wonton</h3>
+                    <p class="restaurants-image-overlay-text">
+                      we are all about we are all about to the fullest and all
+                      content dining out or in!dining out or in!
+                    </p>
+                    <a class="link" href="">
+                      <svg>
+                        <use href="./images/icon-sprite.svg#icon-geotag"></use>
+                      </svg>
+                      <span>Saheb bazar</span></a
+                    >
+                    <button class="button" type="button">Book now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="button basic-button swiper-button-prev"
+            type="button"
+            aria-label=""
+          >
+            <svg class="our-services-icon-arrow">
+              <use
+                href="./images/icon-sprite.svg#icon-chevron-arrow-right"
+              ></use>
+            </svg>
+          </button>
         </div>
-        <button
-          class="button basic-button our-services-button"
-          type="button"
-          aria-label=""
-        >
-          <svg class="our-services-icon-arrow">
-            <use href="./images/icon-sprite.svg#icon-chevron-arrow-right"></use>
-          </svg>
-        </button>
       </section>
       <section class="booking">
         <div class="container">
@@ -525,6 +637,8 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

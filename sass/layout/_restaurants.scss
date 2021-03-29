@@ -2,3 +2,44 @@
   padding-top: 78px;
   padding-bottom: 33px;
 }
+
+.swiper-container {
+  max-width: 554px;
+  max-height: 1020px;
+  @include adaptive-for-tablet {
+    max-width: 84%;
+    max-height: 493px;
+    margin-left: 0;
+  }
+
+  @include adaptive-for-desktop {
+    max-width: 68.75%;
+    max-height: 636px;
+  }
+}
+
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.restaurants-image-wrap {
+  position: relative;
+  max-width: 494px;
+  max-height: 493px;
+
+  @include adaptive-for-desktop {
+    max-width: 639px;
+    max-height: 636px;
+  }
+}
+
+.restaurants-image {
+  border-radius: 20px;
+}
+
+.restaurants-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
