@@ -79,6 +79,11 @@ const swiper = new Swiper('.swiper-container', {
     sensitivity: 1,
     eventsTarget: '.swiper-slide',
   },
+
+  a11ly: {
+    enablet: true,
+    nextSlideMessage: 'Next slide',
+  },
   //---------------------------------//
   navigation: {
     prevEl: '.swiper-button-prev',

@@ -14,11 +14,6 @@
       content="Expice, Discover Restaurant, Delicious Food"
     />
     <title>Expice</title>
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -104,26 +99,118 @@
           </a>
           <div class="hero-slider-show-container">
             <div class="hero-slider-show-track">
-              <img
-                class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-1-mobile.png"
-                alt="a plate with appetizing meat, vegetables and herbs"
-              />
-              <img
-                class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-2-mobile.png"
-                alt="plate with delicious fish, vegetables and herbs"
-              />
-              <img
-                class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-3-mobile.png"
-                alt="plate with mouth-watering meatloaf, vegetable puree and sauce"
-              />
-              <img
-                class="hero-slider-show-image"
-                src="./images/hero/hero-delicious-food-4-mobile.png"
-                alt="poached egg, black bread, tomatoes and herbs"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1650px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-1-desktop.png    1x,
+                    ./images/hero/hero-delicious-food-1-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1090px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-1-tablet.png    1x,
+                    ./images/hero/hero-delicious-food-1-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 554px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-1-mobile.png    1x,
+                    ./images/hero/hero-delicious-food-1-mobile@2x.png 2x
+                  "
+                />
+                <img
+                  class="hero-slider-show-image"
+                  src="./images/hero/hero-delicious-food-1-mobile.png"
+                  alt="a plate with appetizing meat, vegetables and herbs"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width: 1650px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-2-desktop.png    1x,
+                    ./images/hero/hero-delicious-food-2-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1090px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-2-tablet.png    1x,
+                    ./images/hero/hero-delicious-food-2-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 554px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-2-mobile.png    1x,
+                    ./images/hero/hero-delicious-food-2-mobile@2x.png 2x
+                  "
+                />
+                <img
+                  class="hero-slider-show-image"
+                  src="./images/hero/hero-delicious-food-2-mobile.png"
+                  alt="plate with delicious fish, vegetables and herbs"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width: 1650px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-3-desktop.png    1x,
+                    ./images/hero/hero-delicious-food-3-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1090px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-3-tablet.png    1x,
+                    ./images/hero/hero-delicious-food-3-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 554px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-3-mobile.png    1x,
+                    ./images/hero/hero-delicious-food-3-mobile@2x.png 2x
+                  "
+                />
+                <img
+                  class="hero-slider-show-image"
+                  src="./images/hero/hero-delicious-food-3-mobile.png"
+                  alt="plate with mouth-watering meatloaf, vegetable puree and sauce"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width: 1650px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-4-desktop.png    1x,
+                    ./images/hero/hero-delicious-food-4-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1090px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-4-tablet.png    1x,
+                    ./images/hero/hero-delicious-food-4-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 554px)"
+                  srcset="
+                    ./images/hero/hero-delicious-food-4-mobile.png    1x,
+                    ./images/hero/hero-delicious-food-4-mobile@2x.png 2x
+                  "
+                />
+                <img
+                  class="hero-slider-show-image"
+                  src="./images/hero/hero-delicious-food-4-mobile.png"
+                  alt="poached egg, black bread, tomatoes and herbs"
+                />
+              </picture>
             </div>
           </div>
           <button
@@ -163,11 +250,27 @@
             <ul class="list swiper-wrapper">
               <li class="swiper-slide" data-hash="slide-1">
                 <div class="restaurants-image-wrap">
-                  <img
-                    class="restaurants-image"
-                    src="./images/restaurants/restaurants-food-3-mobile.jpg"
-                    alt="kebab with vegetables"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1090px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-3-tablet-desktop.jpg    1x,
+                        ./images/restaurants/restaurants-food-3-tablet-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 554px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-3-mobile.jpg    1x,
+                        ./images/restaurants/restaurants-food-3-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="restaurants-image"
+                      src="./images/restaurants/restaurants-food-3-mobile.jpg"
+                      alt="kebab with vegetables"
+                    />
+                  </picture>
                   <div class="restaurants-image-overlay">
                     <h3 class="restaurants-image-overlay-title">The wonton</h3>
                     <p class="restaurants-image-overlay-text">
@@ -186,11 +289,27 @@
               </li>
               <li class="swiper-slide" data-hash="slide-2">
                 <div class="restaurants-image-wrap">
-                  <img
-                    class="restaurants-image"
-                    src="./images/restaurants/restaurants-food-4-mobile.jpg"
-                    alt="salad with slices of meat and herbs"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1090px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-4-tablet-desktop.jpg    1x,
+                        ./images/restaurants/restaurants-food-4-tablet-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 554px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-4-mobile.jpg    1x,
+                        ./images/restaurants/restaurants-food-4-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="restaurants-image"
+                      src="./images/restaurants/restaurants-food-4-mobile.jpg"
+                      alt="salad with slices of meat and herbs"
+                    />
+                  </picture>
                   <div class="restaurants-image-overlay">
                     <h3 class="restaurants-image-overlay-title">The wonton</h3>
                     <p class="restaurants-image-overlay-text">
@@ -209,11 +328,27 @@
               </li>
               <li class="swiper-slide" data-hash="slide-3">
                 <div class="restaurants-image-wrap">
-                  <img
-                    class="restaurants-image"
-                    src="./images/restaurants/restaurants-food-5-mobile.jpg"
-                    alt="fried chicken legs with vegetables"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1090px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-5-tablet-desktop.jpg    1x,
+                        ./images/restaurants/restaurants-food-5-tablet-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 554px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-5-mobile.jpg    1x,
+                        ./images/restaurants/restaurants-food-5-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="restaurants-image"
+                      src="./images/restaurants/restaurants-food-5-mobile.jpg"
+                      alt="fried chicken legs with vegetables"
+                    />
+                  </picture>
                   <div class="restaurants-image-overlay">
                     <h3 class="restaurants-image-overlay-title">The wonton</h3>
                     <p class="restaurants-image-overlay-text">
@@ -232,11 +367,27 @@
               </li>
               <li class="swiper-slide" data-hash="slide-4">
                 <div class="restaurants-image-wrap">
-                  <img
-                    class="restaurants-image"
-                    src="./images/restaurants/restaurants-food-1-mobile.jpg"
-                    alt="hamburger with fries"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1090px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-1-tablet-desktop.jpg    1x,
+                        ./images/restaurants/restaurants-food-1-tablet-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 554px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-1-mobile.jpg    1x,
+                        ./images/restaurants/restaurants-food-1-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="restaurants-image"
+                      src="./images/restaurants/restaurants-food-1-mobile.jpg"
+                      alt="hamburger with fries"
+                    />
+                  </picture>
                   <div class="restaurants-image-overlay">
                     <h3 class="restaurants-image-overlay-title">Fire water</h3>
                     <p class="restaurants-image-overlay-text">
@@ -255,11 +406,27 @@
               </li>
               <li class="swiper-slide" data-hash="slide-5">
                 <div class="restaurants-image-wrap">
-                  <img
-                    class="restaurants-image"
-                    src="./images/restaurants/restaurants-food-2-mobile.jpg"
-                    alt="pizza"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1090px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-2-tablet-desktop.jpg    1x,
+                        ./images/restaurants/restaurants-food-2-tablet-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 554px)"
+                      srcset="
+                        ./images/restaurants/restaurants-food-2-mobile.jpg    1x,
+                        ./images/restaurants/restaurants-food-2-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="restaurants-image"
+                      src="./images/restaurants/restaurants-food-2-mobile.jpg"
+                      alt="pizza"
+                    />
+                  </picture>
                   <div class="restaurants-image-overlay">
                     <h3 class="restaurants-image-overlay-title">The wonton</h3>
                     <p class="restaurants-image-overlay-text">
@@ -281,9 +448,9 @@
           <button
             class="button basic-button swiper-button-prev"
             type="button"
-            aria-label=""
+            aria-label="slide switch button"
           >
-            <svg class="our-services-icon-arrow">
+            <svg class="restaurants-icon-arrow">
               <use
                 href="./images/icon-sprite.svg#icon-chevron-arrow-right"
               ></use>
@@ -637,8 +804,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/swiper-bundle.min.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
