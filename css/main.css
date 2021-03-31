@@ -530,16 +530,42 @@ section {
   background-color: var(--secondary-accent-color);
 }
 
-.hero-slider-button {
+.hero-slider-show-buttons-wrap {
+  position: absolute;
+  bottom: 80px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 108px;
+}
+
+.hero-slider-show-button {
+  position: relative;
   width: 30px;
   height: 30px;
+  color: var(--basic-light-text-color);
+  background-color: transparent;
   border-radius: 50%;
+  border: 3px solid var(--basic-light-text-color);
 }
 
 .hero-slider-button-icon-arrow {
+  position: absolute;
+  display: block;
   width: 34px;
   height: 16px;
   fill: currentColor;
+}
+
+.hero-slider-button-icon-arrow.left {
+  top: 16%;
+  left: 25%;
+}
+
+.hero-slider-button-icon-arrow.right {
+  top: 16%;
+  right: 25%;
 }
 
 .booking-search-button {
@@ -844,7 +870,17 @@ section {
 }
 
 .hero {
-  background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
+  position: relative;
+  background-image: url(../../images/hero/hero-lettuce-mobile.png), linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
+  background-size: 320px 493px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/hero/hero-lettuce-mobile@2x.png), linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
+  }
 }
 
 .hero .container {
@@ -892,15 +928,39 @@ section {
 }
 
 .hero-location-link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 65px;
+  margin-bottom: 20px;
+  padding: 0px 58px 0px 32px;
+  font-weight: var(--medium-font-weight);
+  font-size: 30px;
+  line-height: 3;
   color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
+  border-radius: 5px 100px 100px 5px;
+}
+
+.hero-location-link .icon-geotag {
+  width: 25px;
+  height: 30px;
 }
 
 .hero-slider-show-container {
   outline: 2px solid #000;
-  width: 54.2121%;
+  width: 91.5162%;
+  margin-left: auto;
   overflow: hidden;
+  background-image: radial-gradient(var(--bg-gradient-pattern-color) 3px, transparent 3px);
+  background-size: 45px 43px;
+}
+
+@media (min-width: 1190px) {
+  .hero-slider-show-container {
+    width: 54.2121%;
+  }
 }
 
 .hero-slider-show-track {

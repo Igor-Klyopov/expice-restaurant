@@ -1,10 +1,39 @@
 .hero {
-  background-image: linear-gradient(
-    to right,
-    transparent 75%,
-    var(--primary-accent-color) 75%,
-    var(--primary-accent-color) 25%
-  );
+  position: relative;
+  background-image: url(../../images/hero/hero-lettuce-mobile.png),
+    linear-gradient(
+      to right,
+      transparent 75%,
+      var(--primary-accent-color) 75%,
+      var(--primary-accent-color) 25%
+    );
+  background-size: 320px 493px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../images/hero/hero-lettuce-mobile@2x.png),
+      linear-gradient(
+        to right,
+        transparent 75%,
+        var(--primary-accent-color) 75%,
+        var(--primary-accent-color) 25%
+      );
+  }
+
+  // @include adaptive-for-tablet {
+  //   background-image: url(../../images/download-apps/app-tablet.png),
+  //     url(../../images/download-apps/lettuce-3-tablet.png);
+
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     background-image: url(../../images/download-apps/app-tablet@2x.png),
+  //       url(../../images/download-apps/lettuce-3-tablet@2x.png);
+  //   }
+  // }
 }
 
 .hero .container {
@@ -52,15 +81,39 @@
 }
 
 .hero-location-link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 65px;
+  margin-bottom: 20px;
+  padding: 0px 58px 0px 32px;
+  font-weight: var(--medium-font-weight);
+  font-size: 30px;
+  line-height: 3;
   color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
+  border-radius: 5px 100px 100px 5px;
+  & .icon-geotag {
+    width: 25px;
+    height: 30px;
+  }
 }
 
 .hero-slider-show-container {
   outline: 2px solid #000;
-  width: 54.2121%; //878px
+  width: 91.5162%;
+  margin-left: auto;
   overflow: hidden;
+  background-image: radial-gradient(
+    var(--bg-gradient-pattern-color) 3px,
+    transparent 3px
+  );
+  background-size: 45px 43px;
+
+  @include adaptive-for-tablet {
+    width: 54.2121%; //878px
+  }
 }
 
 .hero-slider-show-track {

@@ -17,16 +17,43 @@
   }
 }
 
-.hero-slider-button {
+.hero-slider-show-buttons-wrap {
+  position: absolute;
+  bottom: 80px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 108px;
+}
+
+.hero-slider-show-button {
+  position: relative;
   width: 30px;
   height: 30px;
+  color: var(--basic-light-text-color);
+  background-color: transparent;
   border-radius: 50%;
+  border: 3px solid var(--basic-light-text-color);
+  // &:not(:last-child) {
+  //   margin-right: 30%;
+  // }
 }
 
 .hero-slider-button-icon-arrow {
+  position: absolute;
+  display: block;
   width: 34px;
   height: 16px;
   fill: currentColor;
+  &.left {
+    top: 16%;
+    left: 25%;
+  }
+  &.right {
+    top: 16%;
+    right: 25%;
+  }
 }
 
 .booking-search-button {
