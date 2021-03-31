@@ -489,16 +489,16 @@ section {
   outline: 3px solid #df2e0f;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 1190px) {
   .container {
-    width: 1090px;
+    width: 1190px;
     padding: 0 15px;
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .container {
-    width: 1650px;
+    width: 1920px;
   }
 }
 
@@ -674,7 +674,7 @@ section {
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .menu-burger-button {
     display: none;
   }
@@ -723,7 +723,7 @@ section {
   background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .header .container {
     display: flex;
     justify-content: center;
@@ -770,13 +770,13 @@ section {
   background-color: var(--primary-accent-color);
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 1190px) {
   .main-manu-container {
     width: 30%;
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .main-manu-container {
     position: static;
     display: block;
@@ -794,7 +794,7 @@ section {
   flex-direction: column;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .main-menu-list {
     flex-direction: row;
     align-items: center;
@@ -808,7 +808,7 @@ section {
   margin-left: 0;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .main-menu-item {
     margin-top: 0;
     margin-right: 5px;
@@ -830,7 +830,7 @@ section {
   color: var(--basic-light-text-color);
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .main-menu-link {
     padding: 40px 10px;
     font-size: 16px;
@@ -920,7 +920,7 @@ section {
   max-height: 1020px;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 1190px) {
   .swiper-container {
     max-width: 84%;
     max-height: 493px;
@@ -928,7 +928,7 @@ section {
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .swiper-container {
     max-width: 68.75%;
     max-height: 636px;
@@ -941,7 +941,7 @@ section {
   max-height: 493px;
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .restaurants-image-wrap {
     max-width: 639px;
     max-height: 636px;
@@ -1162,13 +1162,13 @@ section {
   margin: -15px -15px;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 1190px) {
   .food-list {
     margin: -20px -15px;
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .food-list {
     margin: -30px -15px;
   }
@@ -1186,7 +1186,7 @@ section {
   margin-left: 15px;
 }
 
-@media (min-width: 1090px) {
+@media (min-width: 1190px) {
   .food-item {
     flex-basis: calc( (100% - 2 * 2 * 15px) / 2);
     margin-top: 20px;
@@ -1196,7 +1196,7 @@ section {
   }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1920px) {
   .food-item {
     flex-basis: calc( (100% - 2 * 3 * 15px) / 3);
     margin-top: 30px;
@@ -1276,9 +1276,46 @@ section {
 .download-apps-image-wrap {
   width: 100%;
   height: 525px;
+  background-size: 317px 555px, 349px 354px;
   background-image: url(../../images/download-apps/app-mobile.png), url(../../images/download-apps/lettuce-3-mobile.png);
   background-repeat: no-repeat;
   background-position: 50% 50%, -12% 50%;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .download-apps-image-wrap {
+    background-image: url(../../images/download-apps/app-mobile@2x.png), url(../../images/download-apps/lettuce-3-mobile@2x.png);
+  }
+}
+
+@media (min-width: 1190px) {
+  .download-apps-image-wrap {
+    background-position: 100% 50%, 75% 90%;
+    height: 900px;
+    background-size: 514px 900px, 523px 531px;
+    background-image: url(../../images/download-apps/app-tablet.png), url(../../images/download-apps/lettuce-3-tablet.png);
+  }
+}
+
+@media screen and (min-width: 1190px) and (min-device-pixel-ratio: 2), screen and (min-width: 1190px) and (min-resolution: 192dpi), screen and (min-width: 1190px) and (min-resolution: 2dppx) {
+  .download-apps-image-wrap {
+    background-image: url(../../images/download-apps/app-tablet@2x.png), url(../../images/download-apps/lettuce-3-tablet@2x.png);
+  }
+}
+
+@media (min-width: 1920px) {
+  .download-apps-image-wrap {
+    background-position: 100% 50%, 80% 85%;
+    height: 1090px;
+    background-size: 653px 1144px, 677px 687px;
+    background-image: url(../../images/download-apps/app-desktop.png), url(../../images/download-apps/lettuce-3-desktop.png);
+  }
+}
+
+@media screen and (min-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1920px) and (min-resolution: 2dppx) {
+  .download-apps-image-wrap {
+    background-image: url(../../images/download-apps/app-desktop@2x.png), url(../../images/download-apps/lettuce-3-desktop@2x.png);
+  }
 }
 
 .footer {

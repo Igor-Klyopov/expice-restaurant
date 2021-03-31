@@ -97,13 +97,13 @@ const swiper = new Swiper('.swiper-container', {
 
 function getDirection() {
   let windowWidth = window.innerWidth;
-  let direction = window.innerWidth <= 1089 ? 'vertical' : 'horizontal';
+  let direction = window.innerWidth <= 1189 ? 'vertical' : 'horizontal';
 
   return direction;
 }
 //--additional properties--//
 function getspaceBetween() {
-  let spaceBetween = window.innerWidth > 1091 ? 40 : 15;
+  let spaceBetween = window.innerWidth > 1191 ? 40 : 15;
 
   return spaceBetween;
 }
