@@ -1,67 +1,120 @@
 .hero {
-  position: relative;
-  background-image: url(../../images/hero/hero-lettuce-mobile.png),
-    linear-gradient(
-      to right,
-      transparent 75%,
-      var(--primary-accent-color) 75%,
-      var(--primary-accent-color) 25%
-    );
-  background-size: 320px 493px, 100% 100%;
+  // position: relative;
+  // z-index: -1;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 100% 70%;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/hero/hero-lettuce-mobile@2x.png),
-      linear-gradient(
-        to right,
-        transparent 75%,
-        var(--primary-accent-color) 75%,
-        var(--primary-accent-color) 25%
-      );
-  }
-
-  // @include adaptive-for-tablet {
-  //   background-image: url(../../images/download-apps/app-tablet.png),
-  //     url(../../images/download-apps/lettuce-3-tablet.png);
-
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../../images/download-apps/app-tablet@2x.png),
-  //       url(../../images/download-apps/lettuce-3-tablet@2x.png);
-  //   }
-  // }
+  background-image: linear-gradient(
+    to right,
+    transparent 75%,
+    var(--primary-accent-color) 75%,
+    var(--primary-accent-color) 25%
+  );
 }
 
 .hero .container {
+  position: relative;
+  padding-top: 0;
+  padding-right: 0;
   padding-bottom: 45px;
+  padding-left: 0;
+
+  @include adaptive-for-tablet {
+    padding-left: 20px;
+    padding-bottom: 250px;
+  }
+
+  @include adaptive-for-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-right: 115px;
+    padding-bottom: 164px;
+    padding-left: 0;
+  }
+}
+
+.hero-content-wrap {
+  @include adaptive-for-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 56%; // width: 52.6%; // max-width: 757px;
+    margin: 0;
+  }
+
+  @include adaptive-for-desktop {
+    position: static;
+    width: 887px;
+  }
 }
 
 .hero-label {
   margin-bottom: 0;
-  font-weight: 900;
+  margin-left: 20px;
+  font-weight: var(--extra-bold-font-weight);
   font-size: 100px;
   line-height: 1.5;
   opacity: 0.05;
+
+  @include adaptive-for-tablet {
+    margin-bottom: -60px;
+    margin-left: 30px;
+    font-size: 150px;
+  }
+
+  @include adaptive-for-desktop {
+    margin-bottom: -70px;
+    margin-left: 132px;
+    font-size: 200px;
+  }
 }
 
 .hero-title {
+  max-width: 400px;
   margin-bottom: 30px;
+  margin-left: 20px;
   font-weight: var(--bold-font-weight);
   font-size: 36px;
+
+  @include adaptive-for-tablet {
+    max-width: 100%; // width: 650px;
+    margin-left: 30px;
+    font-size: 60px;
+    line-height: 1.167;
+    margin-left: 30px;
+  }
+
+  @include adaptive-for-desktop {
+    max-width: 757px;
+    margin-bottom: 40px;
+    margin-left: 132px;
+    font-size: 72px;
+    line-height: 1.25;
+  }
 }
 
 .hero-search {
+  width: 462px;
+  height: 90px;
   margin-bottom: 50px;
+  margin-left: 20px;
+  @include adaptive-for-tablet {
+    margin-bottom: 100px;
+    margin-left: 30px;
+  }
+
+  @include adaptive-for-desktop {
+    width: 670px;
+    margin-bottom: 180px;
+    margin-left: 135px;
+  }
 }
 
 .hero-search-wrap {
   position: relative;
-  width: 462px;
-  height: 90px;
 }
 
 .hero-search-input {
@@ -100,7 +153,30 @@
   }
 }
 
+.hero-decor-image {
+  position: absolute;
+  top: 33%;
+  right: 0;
+  z-index: 1;
+  width: 320px;
+  height: 493px;
+
+  @include adaptive-for-tablet {
+    top: -18%;
+    right: 11%;
+  }
+
+  @include adaptive-for-desktop {
+    top: -11%;
+    right: 8%;
+    width: 584px;
+    height: 900px;
+  }
+}
+
 .hero-slider-show-container {
+  position: relative;
+  z-index: 2;
   outline: 2px solid #000;
   width: 91.5162%;
   margin-left: auto;
@@ -112,7 +188,15 @@
   background-size: 45px 43px;
 
   @include adaptive-for-tablet {
-    width: 54.2121%; //878px
+    width: 46.2%;
+    // width: 550px;
+    // margin-left: 0;
+  }
+
+  @include adaptive-for-desktop {
+    width: 878px;
+    // width: 550px;
+    // margin-left: 0;
   }
 }
 

@@ -70,45 +70,69 @@
     <main>
       <section class="hero">
         <div class="container">
-          <p class="title hero-label">Food</p>
-          <h1 class="title hero-title">Discover restaurant & delicious food</h1>
-          <form class="hero-search">
-            <div class="hero-search-wrap">
-              <label>
-                <span class="visually-hidden">Search restaurant, food</span>
-                <input
-                  class="hero-search-input"
-                  type="text"
-                  placeholder="Search restaurant, food"
-                />
-              </label>
-              <button
-                class="button basic-button hero-search-button"
-                type="button"
-                aria-label="To start searching"
-              >
-                <span class="send-button-text">Go</span>
-              </button>
-            </div>
-          </form>
-          <a class="link hero-location-link" aria-label="">
-            <svg class="icon-geotag">
-              <use href="./images/icon-sprite.svg#icon-geotag"></use>
-            </svg>
-            Rajshahi
-          </a>
+          <div class="hero-content-wrap">
+            <p class="title hero-label">Food</p>
+            <h1 class="title hero-title">
+              Discover restaurant & delicious food
+            </h1>
+            <form class="hero-search">
+              <div class="hero-search-wrap">
+                <label>
+                  <span class="visually-hidden">Search restaurant, food</span>
+                  <input
+                    class="hero-search-input"
+                    type="text"
+                    placeholder="Search restaurant, food"
+                  />
+                </label>
+                <button
+                  class="button basic-button hero-search-button"
+                  type="button"
+                  aria-label="To start searching"
+                >
+                  <span class="send-button-text">Go</span>
+                </button>
+              </div>
+            </form>
+            <a class="link hero-location-link" aria-label="">
+              <svg class="icon-geotag">
+                <use href="./images/icon-sprite.svg#icon-geotag"></use>
+              </svg>
+              Rajshahi
+            </a>
+          </div>
+          <picture class="hero-decor-image">
+            <source
+              media="(min-width: 1920px)"
+              srcset="
+                ./images/hero/hero-lettuce-desktop.png    1x,
+                ./images/hero/hero-lettuce-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 554px)"
+              srcset="
+                ./images/hero/hero-lettuce-tablet-mobile.png    1x,
+                ./images/hero/hero-lettuce-tablet-mobile@2x.png 2x
+              "
+            />
+            <img
+              src="./images/hero/hero-lettuce-tablet-mobile.png"
+              alt="lettuce"
+            />
+          </picture>
           <div class="hero-slider-show-container">
             <div class="hero-slider-show-track">
               <picture>
                 <source
-                  media="(min-width: 1650px)"
+                  media="(min-width: 1920px)"
                   srcset="
                     ./images/hero/hero-delicious-food-1-desktop.png    1x,
                     ./images/hero/hero-delicious-food-1-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="(min-width: 1090px)"
+                  media="(min-width: 1190px)"
                   srcset="
                     ./images/hero/hero-delicious-food-1-tablet.png    1x,
                     ./images/hero/hero-delicious-food-1-tablet@2x.png 2x
@@ -129,14 +153,14 @@
               </picture>
               <picture>
                 <source
-                  media="(min-width: 1650px)"
+                  media="(min-width: 1920px)"
                   srcset="
                     ./images/hero/hero-delicious-food-2-desktop.png    1x,
                     ./images/hero/hero-delicious-food-2-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="(min-width: 1090px)"
+                  media="(min-width: 1190px)"
                   srcset="
                     ./images/hero/hero-delicious-food-2-tablet.png    1x,
                     ./images/hero/hero-delicious-food-2-tablet@2x.png 2x
@@ -157,14 +181,14 @@
               </picture>
               <picture>
                 <source
-                  media="(min-width: 1650px)"
+                  media="(min-width: 1920px)"
                   srcset="
                     ./images/hero/hero-delicious-food-3-desktop.png    1x,
                     ./images/hero/hero-delicious-food-3-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="(min-width: 1090px)"
+                  media="(min-width: 1190px)"
                   srcset="
                     ./images/hero/hero-delicious-food-3-tablet.png    1x,
                     ./images/hero/hero-delicious-food-3-tablet@2x.png 2x
@@ -185,14 +209,14 @@
               </picture>
               <picture>
                 <source
-                  media="(min-width: 1650px)"
+                  media="(min-width: 1920px)"
                   srcset="
                     ./images/hero/hero-delicious-food-4-desktop.png    1x,
                     ./images/hero/hero-delicious-food-4-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="(min-width: 1090px)"
+                  media="(min-width: 1190px)"
                   srcset="
                     ./images/hero/hero-delicious-food-4-tablet.png    1x,
                     ./images/hero/hero-delicious-food-4-tablet@2x.png 2x
@@ -254,7 +278,7 @@
                 <div class="restaurants-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-3-tablet-desktop.jpg    1x,
                         ./images/restaurants/restaurants-food-3-tablet-desktop@2x.jpg 2x
@@ -301,7 +325,7 @@
                 <div class="restaurants-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-4-tablet-desktop.webp    1x,
                         ./images/restaurants/restaurants-food-4-tablet-desktop@2x.webp 2x
@@ -309,7 +333,7 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-4-tablet-desktop.jpg    1x,
                         ./images/restaurants/restaurants-food-4-tablet-desktop@2x.jpg 2x
@@ -356,7 +380,7 @@
                 <div class="restaurants-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-5-tablet-desktop.webp    1x,
                         ./images/restaurants/restaurants-food-5-tablet-desktop@2x.webp 2x
@@ -364,7 +388,7 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-5-tablet-desktop.jpg    1x,
                         ./images/restaurants/restaurants-food-5-tablet-desktop@2x.jpg 2x
@@ -411,7 +435,7 @@
                 <div class="restaurants-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-1-tablet-desktop.webp    1x,
                         ./images/restaurants/restaurants-food-1-tablet-desktop@2x.webp 2x
@@ -419,7 +443,7 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-1-tablet-desktop.jpg    1x,
                         ./images/restaurants/restaurants-food-1-tablet-desktop@2x.jpg 2x
@@ -466,7 +490,7 @@
                 <div class="restaurants-image-wrap">
                   <picture>
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-2-tablet-desktop.webp    1x,
                         ./images/restaurants/restaurants-food-2-tablet-desktop@2x.webp 2x
@@ -474,7 +498,7 @@
                       type="image/webp"
                     />
                     <source
-                      media="(min-width: 1090px)"
+                      media="(min-width: 1190px)"
                       srcset="
                         ./images/restaurants/restaurants-food-2-tablet-desktop.jpg    1x,
                         ./images/restaurants/restaurants-food-2-tablet-desktop@2x.jpg 2x

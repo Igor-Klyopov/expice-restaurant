@@ -313,6 +313,7 @@ summary {
   --regular-font-weight: 400;
   --medium-font-weight: 500;
   --bold-font-weight: 700;
+  --extra-bold-font-weight: 900;
   --basic-transform-animation: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -421,6 +422,7 @@ summary {
 }
 
 body {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: var(--regular-font-weight);
   font-size: 14px;
@@ -437,6 +439,7 @@ body {
 }
 
 .link {
+  cursor: pointer;
   text-decoration: none;
   font-style: normal;
   color: inherit;
@@ -489,6 +492,12 @@ section {
   outline: 3px solid #df2e0f;
 }
 
+@media screen and (min-width: 554px) {
+  .container {
+    width: 554px;
+  }
+}
+
 @media (min-width: 1190px) {
   .container {
     width: 1190px;
@@ -532,22 +541,45 @@ section {
 
 .hero-slider-show-buttons-wrap {
   position: absolute;
-  bottom: 80px;
-  right: 15px;
+  bottom: 4%;
+  right: 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 108px;
 }
 
+@media (min-width: 1190px) {
+  .hero-slider-show-buttons-wrap {
+    width: 172px;
+    bottom: 25%;
+    right: 3%;
+  }
+}
+
+@media (min-width: 1190px) {
+  .hero-slider-show-buttons-wrap {
+    bottom: 15%;
+    right: 6%;
+  }
+}
+
 .hero-slider-show-button {
   position: relative;
+  z-index: 2;
   width: 30px;
   height: 30px;
   color: var(--basic-light-text-color);
   background-color: transparent;
   border-radius: 50%;
   border: 3px solid var(--basic-light-text-color);
+}
+
+@media (min-width: 1190px) {
+  .hero-slider-show-button {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .hero-slider-button-icon-arrow {
@@ -566,6 +598,13 @@ section {
 .hero-slider-button-icon-arrow.right {
   top: 16%;
   right: 25%;
+}
+
+@media (min-width: 1190px) {
+  .hero-slider-button-icon-arrow {
+    width: 50px;
+    height: 25px;
+  }
 }
 
 .booking-search-button {
@@ -744,7 +783,6 @@ section {
 }
 
 .header {
-  position: relative;
   padding-top: 15px;
   background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
 }
@@ -762,6 +800,12 @@ section {
   justify-content: flex-start;
   margin-right: 20px;
   color: var(--primary-accent-color);
+}
+
+@media (min-width: 1190px) {
+  .logo-wrap {
+    padding: 20px 0 30px 0;
+  }
 }
 
 .logo-icon {
@@ -790,7 +834,7 @@ section {
 .main-manu-container.is-open {
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   display: block;
   overflow-y: scroll;
   background-color: var(--primary-accent-color);
@@ -870,45 +914,134 @@ section {
 }
 
 .hero {
-  position: relative;
-  background-image: url(../../images/hero/hero-lettuce-mobile.png), linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
-  background-size: 320px 493px, 100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 100% 70%;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../../images/hero/hero-lettuce-mobile@2x.png), linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
-  }
+  background-image: linear-gradient(to right, transparent 75%, var(--primary-accent-color) 75%, var(--primary-accent-color) 25%);
 }
 
 .hero .container {
+  position: relative;
+  padding-top: 0;
+  padding-right: 0;
   padding-bottom: 45px;
+  padding-left: 0;
+}
+
+@media (min-width: 1190px) {
+  .hero .container {
+    padding-left: 20px;
+    padding-bottom: 250px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-right: 115px;
+    padding-bottom: 164px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1190px) {
+  .hero-content-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 56%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-content-wrap {
+    position: static;
+    width: 887px;
+  }
 }
 
 .hero-label {
   margin-bottom: 0;
-  font-weight: 900;
+  margin-left: 20px;
+  font-weight: var(--extra-bold-font-weight);
   font-size: 100px;
   line-height: 1.5;
   opacity: 0.05;
 }
 
+@media (min-width: 1190px) {
+  .hero-label {
+    margin-bottom: -60px;
+    margin-left: 30px;
+    font-size: 150px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-label {
+    margin-bottom: -70px;
+    margin-left: 132px;
+    font-size: 200px;
+  }
+}
+
 .hero-title {
+  max-width: 400px;
   margin-bottom: 30px;
+  margin-left: 20px;
   font-weight: var(--bold-font-weight);
   font-size: 36px;
 }
 
+@media (min-width: 1190px) {
+  .hero-title {
+    max-width: 100%;
+    margin-left: 30px;
+    font-size: 60px;
+    line-height: 1.167;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-title {
+    max-width: 757px;
+    margin-bottom: 40px;
+    margin-left: 132px;
+    font-size: 72px;
+    line-height: 1.25;
+  }
+}
+
 .hero-search {
+  width: 462px;
+  height: 90px;
   margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+@media (min-width: 1190px) {
+  .hero-search {
+    margin-bottom: 100px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-search {
+    width: 670px;
+    margin-bottom: 180px;
+    margin-left: 135px;
+  }
 }
 
 .hero-search-wrap {
   position: relative;
-  width: 462px;
-  height: 90px;
 }
 
 .hero-search-input {
@@ -948,7 +1081,34 @@ section {
   height: 30px;
 }
 
+.hero-decor-image {
+  position: absolute;
+  top: 33%;
+  right: 0;
+  z-index: 1;
+  width: 320px;
+  height: 493px;
+}
+
+@media (min-width: 1190px) {
+  .hero-decor-image {
+    top: -18%;
+    right: 11%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-decor-image {
+    top: -11%;
+    right: 8%;
+    width: 584px;
+    height: 900px;
+  }
+}
+
 .hero-slider-show-container {
+  position: relative;
+  z-index: 2;
   outline: 2px solid #000;
   width: 91.5162%;
   margin-left: auto;
@@ -959,7 +1119,13 @@ section {
 
 @media (min-width: 1190px) {
   .hero-slider-show-container {
-    width: 54.2121%;
+    width: 46.2%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-slider-show-container {
+    width: 878px;
   }
 }
 
