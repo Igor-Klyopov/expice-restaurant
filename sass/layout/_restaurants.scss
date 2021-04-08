@@ -1,11 +1,48 @@
 .restaurants .container {
+  position: relative;
   padding-top: 78px;
-  padding-bottom: 33px;
+  padding-bottom: 150px;
+}
+
+.restaurants-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @include adaptive-for-tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+
+  @include adaptive-for-desktop {
+    justify-content: space-evenly;
+  }
+}
+
+.restaurants .accent-title {
+  @include adaptive-for-tablet {
+    max-width: 675px;
+    height: 140px;
+  }
+}
+
+.restaurants .section-description {
+  @include adaptive-for-tablet {
+    max-width: 370px;
+    padding: 0;
+  }
+
+  @include adaptive-for-desktop {
+    max-width: 610px;
+  }
 }
 
 .swiper-container {
   max-width: 554px;
   max-height: 1020px;
+
   @include adaptive-for-tablet {
     max-width: 84%;
     max-height: 493px;

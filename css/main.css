@@ -459,10 +459,6 @@ img {
   overflow: hidden;
 }
 
-p {
-  margin-top: 0;
-}
-
 .title {
   margin-top: 0;
   font-size: 24px;
@@ -474,6 +470,41 @@ p {
 .section-title {
   font-weight: var(--medium-font-weight);
   font-size: 36px;
+}
+
+.accent-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.accent-title::before {
+  content: '';
+  width: 12px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: var(--primary-accent-color);
+}
+
+@media (min-width: 1190px) {
+  .accent-title::before {
+    content: '';
+    width: 25px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1190px) {
+  .accent-title {
+    font-size: 48px;
+    line-height: 1.292;
+  }
+}
+
+.section-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 32px;
 }
 
 .description-title {
@@ -637,12 +668,28 @@ section {
   background-color: var(--secondary-accent-color);
 }
 
-.restaurants-button {
+.restaurants-button-wrap {
+  position: absolute;
+  bottom: 4%;
+  left: 45%;
+}
+
+.restaurants-slider-button {
   width: 40px;
   height: 40px;
   font-weight: var(--bold-font-weight);
   text-transform: uppercase;
   border-radius: 50%;
+}
+
+.icon-line {
+  position: absolute;
+  top: 37%;
+  left: -130%;
+  z-index: -1;
+  width: 72px;
+  height: 10px;
+  fill: var(--primary-accent-color);
 }
 
 .restaurants-icon-arrow {
@@ -1137,8 +1184,50 @@ section {
 }
 
 .restaurants .container {
+  position: relative;
   padding-top: 78px;
-  padding-bottom: 33px;
+  padding-bottom: 150px;
+}
+
+.restaurants-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1190px) {
+  .restaurants-content-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .restaurants-content-wrap {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1190px) {
+  .restaurants .accent-title {
+    max-width: 675px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1190px) {
+  .restaurants .section-description {
+    max-width: 370px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .restaurants .section-description {
+    max-width: 610px;
+  }
 }
 
 .swiper-container {
@@ -1227,20 +1316,6 @@ section {
 
 .our-services .container {
   padding-top: 60px;
-}
-
-.our-services-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
-  padding: 0 20px;
-  height: 100px;
-  border-left: 12px solid var(--primary-accent-color);
-}
-
-.our-services-description {
-  padding: 0 32px;
-  margin-bottom: 30px;
 }
 
 .our-services-list {
@@ -1467,17 +1542,6 @@ section {
 
 .download-apps-description {
   margin-bottom: 28px;
-}
-
-.download-apps-title {
-  padding: 0 20px;
-  height: 100px;
-  border-left: 12px solid var(--primary-accent-color);
-}
-
-.download-apps-description-text {
-  padding: 0 32px;
-  margin-bottom: 30px;
 }
 
 .app-stors {
