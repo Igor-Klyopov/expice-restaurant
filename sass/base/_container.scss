@@ -2,7 +2,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 3px solid rgb(223, 46, 15);
+
   @include adaptive-for-phone {
     width: $phone;
   }

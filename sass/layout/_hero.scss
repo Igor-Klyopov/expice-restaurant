@@ -147,10 +147,6 @@
   color: var(--basic-light-text-color);
   background-color: var(--primary-accent-color);
   border-radius: 5px 100px 100px 5px;
-  & .icon-geotag {
-    width: 25px;
-    height: 30px;
-  }
 }
 
 .hero-decor-image {
@@ -177,7 +173,6 @@
 .hero-slider-show-container {
   position: relative;
   z-index: 2;
-  outline: 2px solid #000;
   width: 91.5162%;
   margin-left: auto;
   overflow: hidden;

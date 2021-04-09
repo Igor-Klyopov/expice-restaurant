@@ -79,4 +79,34 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  color: var(--basic-light-text-color);
+  text-transform: capitalize;
+  background-color: var(--bg-overlay-color);
+  border-radius: 0 0 20px 20px;
+}
+
+.restaurants-image-overlay-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: var(--bold-font-weight);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.restaurants-image-overlay-text {
+  max-width: 300px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.restaurants-link {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.restaurants-link .icon-geotag {
+  margin-right: 10px;
 }

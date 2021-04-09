@@ -1,24 +1,73 @@
 .booking {
+  // position: relative;
   background-color: var(--secondary-bg-color);
-  background-image: url(../../images/booking/lettuce-1-mobile.png);
+  // background-image: url(../../images/booking/lettuce-1-mobile.png);
   background-repeat: no-repeat;
   background-position: 0% 50%;
 }
 
 .booking .container {
+  position: relative;
   padding-top: 85px;
   padding-bottom: 85px;
+  overflow: hidden;
+}
+
+.booking-decor-image-1 {
+  position: absolute;
+  top: -45%;
+  left: 0;
+
+  @include adaptive-for-tablet {
+    top: -80%;
+  }
+}
+
+.booking-decor-image-2 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+
+  @include adaptive-for-tablet {
+    top: 10%;
+  }
+}
+
+.booking-content-wrap {
+  max-width: 510px;
+  height: 333px;
+  margin-left: auto;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #ffffff;
+
+  @include adaptive-for-tablet {
+    margin: 0 auto;
+  }
 }
 
 .booking-title {
+  position: relative;
   margin-bottom: 40px;
   text-transform: lowercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translate(50%, 50%);
+    width: 150px;
+    height: 10px;
+    background-color: var(--primary-accent-color);
+  }
 }
 
 .booking-search-wrap {
   position: relative;
   width: 273px;
   height: 51px;
+  margin: 0 auto;
 }
 
 .booking-search-input {

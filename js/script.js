@@ -64,7 +64,7 @@ const swiper = new Swiper('.swiper-container', {
   touchRatio: 1,
   touchAngle: 45,
   grabCursor: true,
-  slideToClickedSlide: true,
+  // slideToClickedSlide: true,
   hashNavigation: {
     watchState: true,
   },

@@ -112,10 +112,20 @@
 .send-button-text {
 }
 
-.restaurants-button-wrap {
+.restaurants-slider-button-wrap {
   position: absolute;
   bottom: 4%;
   left: 45%;
+
+  @include adaptive-for-tablet {
+    bottom: 38%;
+    left: 92%;
+  }
+
+  @include adaptive-for-desktop {
+    bottom: 41%;
+    left: 75%;
+  }
 }
 
 .restaurants-slider-button {
@@ -140,6 +150,19 @@
   width: 8px;
   height: 14px;
   fill: currentColor;
+}
+
+.restaurants-overlay-button {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  padding: 15px 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: var(--primary-accent-color);
+  background-color: var(--basic-light-bg-color);
+  border-radius: 100px 0px 0px 100px;
 }
 
 .booking-search-button {
