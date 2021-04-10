@@ -42,10 +42,10 @@
   }
 
   @include adaptive-for-desktop {
-    height: 962px;
+    // height: 962px;
     flex-direction: column;
     justify-content: center;
-    // padding: 50px 500px 50px 50px;
+    padding: 100px 110px;
   }
 }
 
@@ -70,13 +70,13 @@
     }
   }
 
-  &:last-child {
-    position: absolute;
-    top: 30px;
-    right: 15px;
-    // align-self: flex-start;
-    background-color: var(--secondary-bg-color);
-  }
+  // &:last-child {
+  //   position: absolute;
+  //   top: 30px;
+  //   right: 15px;
+  //   // align-self: flex-start;
+  //   background-color: var(--secondary-bg-color);
+  // }
 }
 
 .our-services-item-wrap {
@@ -166,8 +166,18 @@
   width: 462px;
   min-height: 550px;
   margin: 0 auto;
+  background-color: var(--secondary-bg-color);
+
+  @include adaptive-for-tablet {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    // align-self: flex-start;
+  }
 
   @include adaptive-for-desktop {
+    top: 110px;
+    right: 110px;
     width: 670px;
     height: 758px;
   }

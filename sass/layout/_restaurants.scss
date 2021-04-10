@@ -21,12 +21,12 @@
   }
 }
 
-.restaurants .accent-title {
-  @include adaptive-for-tablet {
-    max-width: 675px;
-    height: 140px;
-  }
-}
+// .restaurants .accent-title {
+//   @include adaptive-for-tablet {
+//     max-width: 675px;
+//     height: 140px;
+//   }
+// }
 
 .restaurants .section-description {
   @include adaptive-for-tablet {

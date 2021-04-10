@@ -3,6 +3,25 @@
   padding-bottom: 60px;
 }
 
+.explore-foods-description-wrap {
+  max-width: 610px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  text-align: center;
+
+  @include adaptive-for-tablet {
+    margin-bottom: 60px;
+  }
+}
+
+.explore-foods .section-title {
+  @include adaptive-for-tablet {
+    font-size: 48px;
+  }
+}
+
 .food-list {
   display: flex;
   flex-wrap: wrap;
