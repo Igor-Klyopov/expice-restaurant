@@ -9,10 +9,23 @@
 
 .download-apps .container {
   padding-top: 54px;
+  @include adaptive-for-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include adaptive-for-desktop {
+    justify-content: space-evenly;
+  }
 }
 
 .download-apps-description {
   margin-bottom: 28px;
+  max-width: 505px;
+  // @include adaptive-for-tablet {
+  //   margin-top: ;
+  // }
 }
 
 .download-apps-description .section-description {
@@ -34,7 +47,6 @@
 // }
 
 .download-apps-description-wrap {
-  // padding: 0 20px;
 }
 
 .app-stors {
@@ -63,7 +75,7 @@
   background-image: url(../../images/download-apps/app-mobile.png),
     url(../../images/download-apps/lettuce-3-mobile.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%, -12% 50%;
+  background-position: 50% 50%, 0% 50%;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -73,7 +85,7 @@
   }
 
   @include adaptive-for-tablet {
-    background-position: 100% 50%, 75% 90%;
+    background-position: 100% 50%, -20% 90%;
     height: 900px;
     background-size: 514px 900px, 523px 531px;
     background-image: url(../../images/download-apps/app-tablet.png),
@@ -88,7 +100,8 @@
   }
 
   @include adaptive-for-desktop {
-    background-position: 100% 50%, 80% 85%;
+    max-width: 40%;
+    background-position: 100% 50%, -150% 85%;
     height: 1090px;
     background-size: 653px 1144px, 677px 687px;
     background-image: url(../../images/download-apps/app-desktop.png),
