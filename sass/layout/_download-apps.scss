@@ -23,30 +23,10 @@
 .download-apps-description {
   margin-bottom: 28px;
   max-width: 505px;
-  // @include adaptive-for-tablet {
-  //   margin-top: ;
-  // }
 }
 
 .download-apps-description .section-description {
   margin-bottom: 30px;
-}
-
-.download-apps-description .accent-title {
-  // max-width: 400px;
-  // padding-right: 30%;
-
-  @include adaptive-for-tablet {
-    // max-width: 55%;
-  }
-}
-
-// .download-apps-description-text {
-//   padding: 0 32px;
-//   margin-bottom: 30px;
-// }
-
-.download-apps-description-wrap {
 }
 
 .app-stors {

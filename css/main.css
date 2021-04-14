@@ -1820,9 +1820,7 @@ img {
 }
 
 .footer {
-  background-image: url(../../images/footer/greens-mobile.png);
-  background-repeat: no-repeat;
-  background-position: 0 -40%;
+  position: relative;
 }
 
 .footer .container {
@@ -1830,14 +1828,56 @@ img {
   padding-bottom: 36px;
 }
 
+@media (min-width: 1190px) {
+  .footer .container {
+    padding-top: 122px;
+  }
+}
+
+@media (min-width: 1190px) {
+  .footer .container {
+    padding-top: 272px;
+  }
+}
+
 .footer-wrap {
   background-image: radial-gradient(var(--bg-gradient-pattern-color) 3px, transparent 3px);
   background-size: 45px 43px;
 }
 
+@media (min-width: 1190px) {
+  .footer-wrap {
+    background-position: 100px 100px;
+  }
+}
+
 .footer-appeal {
+  margin-bottom: 30px;
   padding: 0 50px;
   text-align: center;
+}
+
+@media (min-width: 1190px) {
+  .footer-appeal {
+    max-width: 535px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+.footer-appeal .title {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1190px) {
+  .footer-appeal .title {
+    font-size: 36px;
+  }
+}
+
+.footer-form {
+  margin-bottom: 30px;
 }
 
 .footer-form-mail-wrap {
@@ -1872,6 +1912,18 @@ img {
   margin-bottom: 26px;
 }
 
+@media (min-width: 1190px) {
+  .about-list {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1190px) {
+  .about-list {
+    margin-bottom: 185px;
+  }
+}
+
 .about-link {
   padding: 8px 13px;
 }
@@ -1884,6 +1936,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1190px) {
+  .footer-social-copyright-wrap {
+    margin-left: 70%;
+  }
 }
 
 .social-list {
@@ -1926,7 +1984,13 @@ img {
 }
 
 .footer-copyright {
-  margin-bottom: 0;
+  margin: 0;
   color: var(--basic-dark-text-color);
+}
+
+.footer-decor-image {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
