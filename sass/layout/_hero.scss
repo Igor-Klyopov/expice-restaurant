@@ -154,8 +154,8 @@
   top: 33%;
   right: 0;
   z-index: 1;
-  width: 320px;
-  height: 493px;
+  // width: 320px;
+  // height: 493px;
 
   @include adaptive-for-tablet {
     top: -18%;
@@ -165,8 +165,8 @@
   @include adaptive-for-desktop {
     top: -11%;
     right: 8%;
-    width: 584px;
-    height: 900px;
+    // width: 584px;
+    // height: 900px;
   }
 }
 

@@ -1150,8 +1150,6 @@ img {
   top: 33%;
   right: 0;
   z-index: 1;
-  width: 320px;
-  height: 493px;
 }
 
 @media (min-width: 1190px) {
@@ -1165,8 +1163,6 @@ img {
   .hero-decor-image {
     top: -11%;
     right: 8%;
-    width: 584px;
-    height: 900px;
   }
 }
 
