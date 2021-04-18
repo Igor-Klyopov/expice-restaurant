@@ -108,3 +108,19 @@ function getspaceBetween() {
   return spaceBetween;
 }
 //---------------------------------//
+
+//main-menu smooth scroll
+const mainMenuLinksRef = document.querySelectorAll('.main-menu-link');
+
+mainMenuLinksRef.forEach(link => link.addEventListener('click', clickHandler));
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute('href');
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: 'smooth',
+  });
+}
