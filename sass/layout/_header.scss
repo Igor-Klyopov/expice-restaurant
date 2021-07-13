@@ -69,7 +69,7 @@
   }
 
   @include adaptive-for-tablet {
-    width: 30%;
+    width: 35%;
   }
   @include adaptive-for-desktop {
     position: static;
@@ -115,7 +115,7 @@
 
 .main-menu-link {
   padding: 10px 20px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   font-weight: var(--bold-font-weight);
   text-transform: capitalize;

@@ -1,6 +1,4 @@
 .hero {
-  // position: relative;
-  // z-index: -1;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 100% 70%;
@@ -96,22 +94,22 @@
   }
 }
 
-.hero-search {
-  width: 462px;
-  height: 90px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-  @include adaptive-for-tablet {
-    margin-bottom: 100px;
-    margin-left: 30px;
-  }
+// .hero-search {
+//   width: 462px;
+//   height: 90px;
+//   margin-bottom: 50px;
+//   margin-left: 20px;
+//   @include adaptive-for-tablet {
+//     margin-bottom: 100px;
+//     margin-left: 30px;
+//   }
 
-  @include adaptive-for-desktop {
-    width: 670px;
-    margin-bottom: 180px;
-    margin-left: 135px;
-  }
-}
+//   @include adaptive-for-desktop {
+//     width: 670px;
+//     margin-bottom: 180px;
+//     margin-left: 135px;
+//   }
+// }
 
 .hero-search-wrap {
   position: relative;

@@ -65,9 +65,9 @@
   }
 
   @include adaptive-for-tablet {
-    background-position: 100% 50%, -20% 90%;
+    background-position: 100% 50%, -1400% 60%;
     height: 900px;
-    background-size: 514px 900px, 523px 531px;
+    background-size: 257px 450px, 262px 266px;
     background-image: url(./../images/download-apps/app-tablet.png),
       url(./../images/download-apps/lettuce-3-tablet.png);
 

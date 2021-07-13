@@ -39,7 +39,7 @@
     rollSlider();
   });
 
-  document.querySelector('.scroll-left').addEventListener('click', function () {
+  document.querySelector('.scroll-left').addEventListener('click', () => {
     count -= 1;
     if (count < 0) {
       count = sliderItems.length - 1;
@@ -107,9 +107,10 @@ function getspaceBetween() {
 
   return spaceBetween;
 }
+
 //---------------------------------//
 
-//main-menu smooth scroll
+//main-menu links page smooth scroll
 const mainMenuLinksRef = document.querySelectorAll('.main-menu-link');
 
 mainMenuLinksRef.forEach(link => link.addEventListener('click', clickHandler));

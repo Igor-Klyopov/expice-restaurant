@@ -114,8 +114,12 @@
 // }
 
 .footer-input-mail {
-  padding: 22px 50px 22px 33px;
+  padding-top: 5px;
+  padding-right: 50px;
+  padding-bottom: 5px;
+  padding-left: 33px;
   width: 100%;
+  height: 60px;
   background: var(--basic-light-bg-color);
   box-shadow: 2px 2px 30px 2px var(--primary-bg-color);
   outline: none;
@@ -149,7 +153,11 @@
 }
 
 .about-link {
-  padding: 8px 13px;
+  display: block;
+  padding: 5px 5px;
+  font-size: 10px;
+  font-weight: var(--bold-font-weight);
+
   &:focus,
   &:hover {
     color: var(--primary-accent-color);
@@ -232,6 +240,6 @@
 
 .footer-decor-image {
   position: absolute;
-  top: 0;
+  top: -15px;
   left: 0;
 }
