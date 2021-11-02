@@ -16,9 +16,6 @@
 }
 
 .our-services .accent-title {
-  // @include adaptive-for-tablet {
-  //   max-width: 310px;
-  // }
 }
 
 .our-services .section-description {
@@ -42,7 +39,6 @@
   }
 
   @include adaptive-for-desktop {
-    // height: 962px;
     flex-direction: column;
     justify-content: center;
     padding: 100px 110px;
@@ -59,24 +55,14 @@
     margin-bottom: 30px;
     @include adaptive-for-tablet {
       max-width: 565px;
-      // height: 275px;
       margin-right: 60px;
       margin-bottom: 0;
     }
 
     @include adaptive-for-desktop {
-      // margin-right: 100px;
       max-width: 880px;
     }
   }
-
-  // &:last-child {
-  //   position: absolute;
-  //   top: 30px;
-  //   right: 15px;
-  //   // align-self: flex-start;
-  //   background-color: var(--secondary-bg-color);
-  // }
 }
 
 .our-services-item-wrap {
@@ -155,7 +141,6 @@
 }
 
 .opening-hours {
-  // display: inline-block;
 }
 
 .our-services-icon-wrap {
@@ -187,7 +172,6 @@
     position: absolute;
     top: 30px;
     right: 15px;
-    // align-self: flex-start;
   }
 
   @include adaptive-for-desktop {

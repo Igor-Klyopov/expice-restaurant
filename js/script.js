@@ -18,7 +18,6 @@
   let width;
 
   function init() {
-    console.log('resize');
     width = document.querySelector('.hero-slider-show-container').offsetWidth;
     sliderLine.style.width = width * sliderItems.length + 'px';
     sliderItems.forEach(item => {
@@ -59,12 +58,12 @@ const swiper = new Swiper('.swiper-container', {
   direction: getDirection(),
   //--additional properties--//
   spaceBetween: getspaceBetween(),
-  initialSlide: 3,
+  autoHeight: true,
+  initialSlide: 1,
   simulateTouch: true,
   touchRatio: 1,
   touchAngle: 45,
   grabCursor: true,
-  // slideToClickedSlide: true,
   hashNavigation: {
     watchState: true,
   },
@@ -97,13 +96,13 @@ const swiper = new Swiper('.swiper-container', {
 
 function getDirection() {
   let windowWidth = window.innerWidth;
-  let direction = window.innerWidth <= 1189 ? 'vertical' : 'horizontal';
+  let direction = window.innerWidth < 768 ? 'vertical' : 'horizontal';
 
   return direction;
 }
 //--additional properties--//
 function getspaceBetween() {
-  let spaceBetween = window.innerWidth > 1191 ? 40 : 15;
+  let spaceBetween = window.innerWidth > 320 ? 20 : 5;
 
   return spaceBetween;
 }

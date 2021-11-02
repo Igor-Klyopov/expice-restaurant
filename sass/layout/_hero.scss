@@ -39,7 +39,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    width: 56%; // width: 52.6%; // max-width: 757px;
+    width: 56%;
     margin: 0;
   }
 
@@ -78,7 +78,7 @@
   font-size: 36px;
 
   @include adaptive-for-tablet {
-    max-width: 100%; // width: 650px;
+    max-width: 100%;
     margin-left: 30px;
     font-size: 60px;
     line-height: 1.167;
@@ -93,23 +93,6 @@
     line-height: 1.25;
   }
 }
-
-// .hero-search {
-//   width: 462px;
-//   height: 90px;
-//   margin-bottom: 50px;
-//   margin-left: 20px;
-//   @include adaptive-for-tablet {
-//     margin-bottom: 100px;
-//     margin-left: 30px;
-//   }
-
-//   @include adaptive-for-desktop {
-//     width: 670px;
-//     margin-bottom: 180px;
-//     margin-left: 135px;
-//   }
-// }
 
 .hero-search {
   margin-bottom: 10px;
@@ -179,8 +162,6 @@
   top: 47%;
   right: 0%;
   z-index: 1;
-  // width: 320px;
-  // height: 493px;
 
   @include adaptive-for-tablet {
     top: -18%;
@@ -189,9 +170,6 @@
 
   @include adaptive-for-desktop {
     top: -11%;
-    // right: 7%;
-    // width: 584px;
-    // height: 900px;
   }
 }
 
@@ -209,14 +187,10 @@
 
   @include adaptive-for-tablet {
     width: 46.2%;
-    // width: 550px;
-    // margin-left: 0;
   }
 
   @include adaptive-for-desktop {
     width: 878px;
-    // width: 550px;
-    // margin-left: 0;
   }
 }
 

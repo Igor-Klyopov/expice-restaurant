@@ -1,6 +1,4 @@
 .header {
-  // position: relative;
-  // z-index: -1;
   padding-top: 15px;
   background-image: linear-gradient(
     to right,
@@ -11,8 +9,6 @@
 }
 
 .header .container {
-  // position: relative;
-  // display: flex;
   @include adaptive-for-desktop {
     display: flex;
     justify-content: center;
@@ -57,20 +53,14 @@
   height: 100%;
   padding: 40px 10px;
 
-  // animation-name: bounceInRight;
-  //   transition-property: <свойство>
-  // transition-duration: <время>
-  // transition-timing-function: <функция распределения времени>
-  // transition-delay: <задержка>
   &.is-open {
     top: 0;
     right: 0;
     z-index: 3;
     display: block;
     overflow-y: scroll;
-    // background-color: var(--secondary-bg-color);
+
     background-color: var(--primary-accent-color);
-    // transition: right 250ms ease-in-out;
   }
 
   @include adaptive-for-tablet {
@@ -83,7 +73,6 @@
     padding: 0;
 
     &.is-open {
-      // height: auto;
       background-color: transparent;
       overflow: hidden;
     }
@@ -91,7 +80,6 @@
 }
 
 .main-menu {
-  // display: none;
 }
 
 .main-menu-list {
