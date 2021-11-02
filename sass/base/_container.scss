@@ -4,11 +4,11 @@
   padding: 0 20px;
 
   @include adaptive-for-phone {
-    // width: $phone;
+    width: $phone;
   }
 
   @include adaptive-for-tablet {
-    width: $tablet;
+    width: 100%;
     padding: 0 15px;
   }
 

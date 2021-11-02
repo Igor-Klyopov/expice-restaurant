@@ -519,9 +519,15 @@ img {
   padding: 0 20px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
     padding: 0 15px;
   }
 }
@@ -1766,6 +1772,13 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1919px) {
+  .download-apps .container {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 

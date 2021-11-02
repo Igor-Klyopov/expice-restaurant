@@ -9,14 +9,27 @@
 
 .download-apps .container {
   padding-top: 54px;
+
   @include adaptive-for-tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  @include adaptive-after-tablet-to-desktop {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  // @include adaptive-before-desktop {
+  //   padding-left: 20%;
+  //   padding-right: 20%;
+  // }
+
   @include adaptive-for-desktop {
     justify-content: space-evenly;
+    // padding-left: 0;
+    // padding-right: 0;
   }
 }
 
