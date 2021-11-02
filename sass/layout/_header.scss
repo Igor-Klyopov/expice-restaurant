@@ -38,9 +38,14 @@
 }
 
 .logo-text {
-  width: 165px;
+  width: 120px;
   height: 55px;
   fill: currentColor;
+
+  @include adaptive-for-tablet {
+    width: 165px;
+    height: 55px;
+  }
 }
 
 .main-manu-container {

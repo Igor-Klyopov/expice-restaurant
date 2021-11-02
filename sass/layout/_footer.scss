@@ -115,7 +115,7 @@
 
 .footer-input-mail {
   padding-top: 5px;
-  padding-right: 50px;
+  padding-right: 55px;
   padding-bottom: 5px;
   padding-left: 33px;
   width: 100%;
@@ -170,7 +170,7 @@
   align-items: center;
 
   @include adaptive-for-tablet {
-    margin-left: 70%;
+    // margin-left: auto;
   }
 }
 
@@ -218,7 +218,9 @@
 }
 
 .footer-copyright {
-  margin: 0;
+  // margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
   color: var(--basic-dark-text-color);
 }
 

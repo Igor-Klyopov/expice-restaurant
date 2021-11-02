@@ -51,15 +51,17 @@
   margin-bottom: 40px;
   text-transform: lowercase;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 20%;
-    transform: translate(50%, 50%);
-    width: 150px;
-    height: 10px;
-    background-color: var(--primary-accent-color);
+  @include adaptive-for-tablet {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 20%;
+      transform: translate(50%, 50%);
+      width: 150px;
+      height: 10px;
+      background-color: var(--primary-accent-color);
+    }
   }
 }
 
@@ -72,7 +74,7 @@
 
 .booking-search-input {
   width: 100%;
-  padding: 18px 120px 18px 10px;
+  padding: 18px 100px 18px 10px;
   background-color: var(--basic-light-bg-color);
   box-shadow: 2px 2px 30px 2px var(--primary-bg-color);
   outline: none;
@@ -85,5 +87,9 @@
     text-transform: lowercase;
     color: var(--secondary-text-color);
     opacity: 0.6;
+  }
+
+  @include adaptive-for-tablet {
+    padding: 18px 120px 18px 10px;
   }
 }

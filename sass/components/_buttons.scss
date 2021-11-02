@@ -89,9 +89,9 @@
 
 .hero-search-button {
   position: absolute;
-  top: 8px;
+  top: 11px;
   right: 10px;
-  width: 146px;
+  width: 80px;
   height: 72px;
   padding: 20px 50px;
   font-size: 30px;
@@ -103,6 +103,11 @@
   &:focus,
   &:hover {
     background-color: var(--secondary-accent-color);
+  }
+
+  @include adaptive-for-tablet {
+    width: 146px;
+    height: 72px;
   }
 }
 

@@ -89,53 +89,68 @@
 
 .our-services-item-title {
   margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.our-services-item-description {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .our-services-booking {
   position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: -280px;
-    display: inline-block;
-    width: 82px;
-    height: 16px;
-    background-image: url(./../images/our-services/arrow-left-long.svg);
-    background-repeat: no-repeat;
-  }
-  &::after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 84px;
-    height: 3px;
-    margin-left: 20px;
-    background-color: var(--primary-accent-color);
+
+  @include adaptive-for-tablet {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: -280px;
+      display: inline-block;
+      width: 82px;
+      height: 16px;
+      background-image: url(./../images/our-services/arrow-left-long.svg);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 84px;
+      height: 3px;
+      margin-left: 20px;
+      background-color: var(--primary-accent-color);
+    }
   }
 }
 
 .our-services-opening-hours {
   position: relative;
-  &::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 84px;
-    height: 3px;
-    margin-right: 20px;
-    background-color: var(--primary-accent-color);
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    right: -110px;
-    display: inline-block;
-    width: 82px;
-    height: 16px;
-    background-image: url(./../images/our-services/arrow-right-long.svg);
-    background-repeat: no-repeat;
+
+  @include adaptive-for-tablet {
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 84px;
+      height: 3px;
+      margin-right: 20px;
+      background-color: var(--primary-accent-color);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: -110px;
+      display: inline-block;
+      width: 82px;
+      height: 16px;
+      background-image: url(./../images/our-services/arrow-right-long.svg);
+      background-repeat: no-repeat;
+    }
   }
 }
 
